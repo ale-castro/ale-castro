@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*NAV BAR*/
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 10vh;
+    padding-right: 5%;
+    padding-top: 2.5%;
+
+}
+
+a {
+    color: black;
+    background-color: transparent;
+    border: none;
+    height: 10vh;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    font-size: 120%;
+
+}
+
+a:hover {
+    cursor: pointer;
+    color:#ee3d57;
+}
+
+a:active {
+    cursor: pointer;
+    color:#ee3d57;
+}
+
+/*Lexmark banner*/
+
+.jumbotron {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.lexmark-banner {
+    height: 85vh;
+    display: block;
+    width: 100%;
+}
+
+.jumbotron p{
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line1 {
+    margin-top:10px;
+    border-top: 2px solid white;
+    width: 42%;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line2 {
+    margin-top:10px;
+    border-top: 2px solid white;
+    width: 42%;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End of Lexmark banner*/
+
+/*  beguining of RED BOX*/
+
+.red-container{
+    border-radius: 40px;
+    height: 30vh;
+    background-color: #EE3D57;
+    width: 85%;
+    margin: 6% 6.5% 1% 6.5%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding-left: 7vh;
+}
+
+.warning, .warning-icon {
+    color: #FFF;
+    display: inline-block;
+    margin: 0;
+}
+
+.warning-icon {
+    padding-top: 2.5vh;
+    position: absolute;
+    left: 43%;
+}
+
+.warning {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 13%;
+    left: 48%;  
+}
+
+.no-copy-statement {
+    position: absolute;
+    margin-top: 11vh;
+    padding: 0;
+    margin-right: 12vh;
+    margin-left: 5vh;
+    font-weight: 500;
+    font-size: large;
+    line-height: 30px;
+    margin-bottom: 0; 
+}
+
+
+/*What's PPR explanation*/
+.ppr-description{
+    padding-top: 8vh;
+    margin: 0;
+    padding-left: 43vh;
+    padding-right: 43vh;
+    padding-bottom: 11vh;
+    line-height: 140%;
+    font-weight: 300;
+    display: inline-block;
+    text-align: center;
+    font-size: 120%;
+}
+
+/*contributions done by team members grid*/
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 20vh;
+    padding-bottom: 5vh;
+}
+
+.team, .contributions, .team-roles{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 1% 0;
+}
+
+.team p, .contributions p, .team-roles p {
+    margin: 0;
+    padding: 1%;
+}
+
+.list{
+    font-weight: 300;
+    font-size: 120%;
+}
+
+.myself {
+    font-style: italic;
+    font-weight: 450;
+    font-size: 120%;
+}
+
+/*Terminology section*/
+h1, .line3 {
+    text-align: center; 
+}
+
+.line3 {
+    margin-top:3%;
+    border-top: 2px solid #ee3d57;
+    width: 10%;
+    margin: 0 auto;    
+}
+
+.Terminology {
+    margin: 0;
+    padding-top: 4vh;
+    text-align: left;
+    padding-left: 30vh;
+    font-weight: 300;
+    font-size: 120%;
+    line-height: 140%;
+    padding-bottom: 10vh;
+
+}
+
+/****Understanding users section -gray box*****/
+
+.users-container{
+    background-color:#404041;
+    color: #DADADA;
+    padding: 5vh 10vh 5vh 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    font-weight: 300;
+    font-size: 120%;
+    line-height: 140%;
+    width: fit-content;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.understanding {
+    padding: 2vh 27vh 0 27vh;
+    font-weight: 300;   /*Predominant font size -thin*/
+    font-size: 120%;    /*Predominant font size -thin*/
+    line-height: 140%;  /*Predominant font size -thin*/
+    text-align: center;
+}
+
+.white-italic {
+    font-weight: 400;
+    font-style: italic;
+    color: #FFF;
+}
+
+/*---persona grid----*/
+
+.persona-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5vh;
+    margin: 0;
+    height: 90vh;
+    width: 100vh;
+    padding-left: 20vh;
+    margin-bottom: 10vh;          
+}
+
+.persona-box {
+    border: 3px solid #DADADA;
+    width: 55vh; 
+}
+
+.persona-pic {
+    width: 55vh;
+}
+
+#persona.persona-name {
+    width: 50vh;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-bottom: 2.5vh;            
+}
+
+
+.persona {
+    width: 50vh;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    padding-bottom: 2.5vh;            
+}
+
+#persona { 
+    font-weight: 300;   /*smaller font size -thin*/
+    font-size: 100%;    /*smaller font size -thin*/
+    line-height: 120%;  /*smaller font size -thin*/
+    padding-bottom: 3vh;
+    
+}
+
+.persona {
+    font-weight: 300;
+    font-size: 100%;
+    line-height: 120%;
+}
+
+.persona-name {
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 120%;
+    text-align: center; 
+}
+
+/*Little side note under persona grid*/
+
+.grey-tiny-box-left{
+    margin-top: 5vh;
+    background: #404041;
+    width: 5vh;
+    height: 15vh;
+    display: inline-block;
+    position: absolute;
+}
+
+.side-note1{
+    display: inline-block;
+    padding-left: 10vh;
+    padding-top: 1vh;
+    padding-bottom: 10vh;
+}
+
+.side-note1 p {
+    font-weight: 700;   
+    font-size: 120%;    
+}
+
+#note {
+    font-weight: 300;   /*Predominant font size -thin*/
+    font-size: 120%;    /*Predominant font size -thin*/
+    line-height: 140%;  /*Predominant font size -thin*/
+}
+
+
+
+
+

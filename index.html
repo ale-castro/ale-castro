@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Claudia Castro UX Porfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+      
+        <style></style>
+
+        <script>
+            // JavaScript function to scroll to a specific section
+            function scrollToSection(sectionId) {
+                document.getElementById(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+
+    </head>
+
+    <body>
+        
+<!-- delete this p element once the website is completed-->
+        <p class="temporary-element"> This website is being coded by me &#128513; with all my &#128150; Therefore, there are links that are not working yet. At this time it is only available for desktop screens.</p>
+<!-- delete this p element once the website is completed-->
+
+        <div class="navbar">
+            <button onclick="scrollToSection('section3')">Projects<button>
+            <button>Resume</button>
+        </div>
+
+
+        <section>
+            <div class="top-big-container">
+                <div class="topleft">
+                    <div class="design-statement-container">
+                        <p class="design-statement">“I believe design is about exploring and finding new ways to make a difference in people's lives WHILE meeting organizational goals”</P>   
+                    </div>       
+                </div>
+                <div class="topright">
+                    <div class="name-container">
+                        <p class="name">CLAUDIA</p>
+                        <p class="lastname">CASTRO</p>
+                        <p class="degree">HCId masters graduated</p>
+                        <p class="degree">UX Designer</p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="middle-section">
+                <div class="photo">
+                    <a href="https://www.linkedin.com/in/claudia-a-c-4158a074/" target="_blank">    
+                        <img class="picture-profile" src="Images/claudia-castro.png" alt="Claudia's picture">   
+                    </a>
+                </div>
+                <div class="about">
+                <p>Former industrial engineer who transitioned to UX design after completing a masters degree in Human-Computer Interaction Design at Indiana University Bloomington. As a UX designer, I had the opportunity to work at Lexmark International, Inc. designing for web applications, printer panels, zebras(devices used in retail stores with similar screen sizes to phones), and delivering B2B products.
+                </p>
+                <p>I am a fan of virtual reality. I enjoy spending time with my family. I love being outdoors, hiking and jogging, I do not play tennis as much as I used to, but I’m still in love with it.     
+                </p>       
+            </div>
+            </div>        
+        </section>
+
+    
+
+       <section id="section3"> 
+            <div class="project-section">
+                <h1>PROJECTS</h1>
+                <div class="line1"></div>
+                <div class="project-grid"> 
+                    <div class="project-card1">
+                        <img class="grid-image" src="Images/artem-beliaikin-unsplash.png" alt="picture from Unplash.com by artem beliaikin of a produce isle at a grocery store">
+                        <div class="project-name">
+                        <button id="myBtn">Lexmark</button>
+                        </div>
+                    </div>
+                    <div class="project-card2">
+                        <img class="grid-image" src="Images/anete-lusina-unsplash.png" alt="picture from Unplash.com by anete lusina of a planner with a coffe cup next to it">
+                        <div class="project-name">
+                            <p>Diary Study App</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<div class="white-space">
+</div>
+
+        <section>
+            <div class="footer">
+                
+                <div class="footer-header">
+                    <h1>GET IN TOUCH</h1>
+                    <div class="line2"></div>
+                </div>
+
+                <div class="footer-content-grid">  
+                    <div class="bottom-left">
+                        <div class="email">
+                            <p>ccastrolozano[at]outlook.com</p>
+                            <a href="https://www.linkedin.com/in/claudia-a-c-4158a074/" target="_blank">
+                            <img class="linkedin-logo" src="Images/linkedin.png" alt="linkedin logo that will take you to my linkedin profile">
+                            </a>
+                        </div>    
+                    </div>
+                    
+                    <div class="bottom-right">
+                        <div class="footer-content"> 
+                            <p>Actively looking for opportunities in UX design.
+                            Please feel free to get in touch with me for opportunities, collaborations, or just to chat.</p> 
+                            <hr>
+                            <p>Feedback on this portfolio is always welcome!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="credits">
+                <p class="personal-touch"> This website is being coded by me &#128513; with all my &#128150;</p>
+                <p class="photo-credits">PHOTOGRAPHY CREDITS:</p>
+                <ul class="photographers">
+                    <li>Prince tag - artem-beliaikin (Unsplash.com)</li>
+                    <li>Planner - Anete Lusina (Unsplash.com)</li>  
+                </ul>    
+            </div>
+        </section>
+    </body>
+   
+
+    <!-- The Modal Does it goes outside the body??? aparently yes?-->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please enter password</p>
+      </div>
+    
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+</html>
