@@ -602,8 +602,41 @@ h1,
     padding: 0;
 }
 
+.item-positioning {
+    position: relative;
+}
 
-/* Solution for issue 3 printUI*/
+.item-library-with-pics{
+    display: inline-block;
+    padding-top: 5vh;
+}
+
+.circle2 {
+    clip-path: circle(50% at 50% 50%);
+    width: 25vh;
+    height: 25vh;
+    background-color: #F6C085;
+    position: absolute;
+    right: -12.5vh;
+    top: -7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2 h2 {
+    color: #913E22;
+    z-index: 2;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    font-style: normal;
+    text-align: center;
+    font-size: 120%;
+
+}
+
+
+/* Wait... What? printUI*/
 
 .printUI-issue{
     display: flex;
@@ -620,6 +653,13 @@ h1,
     
 }
 
+/* Solution for issue 3 printUI*/
+
+.sol3{
+    padding-top: 15vh;
+    text-align: center;
+}
+
 .flex--sol2 {
     display: flex;
 }
@@ -631,8 +671,18 @@ h1,
     font-weight: 400;
     line-height: 140%;
     height: 96vh;
-    padding-right: 15vh;
-    
+    padding: 0vh 13vh 0vh 13vh;   
+}
+
+.note4 {
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.note4 h4, .note4 p{
+    display: inline-block;
+    text-align: center;
+    margin: 0;   
 }
 
 
@@ -645,6 +695,7 @@ h1,
 .photo-credits{
     font-size: x-small;
     font-weight: 600;
+    display: inline-block;
 
 }
 
@@ -653,8 +704,8 @@ h1,
     font-style: normal;
     font-weight: 200;
     position: absolute;
-    top: 5vh;
     left: 20vh;
+    top: 0;
     padding-bottom: 5vh;
 
 }
@@ -665,11 +716,25 @@ h1,
 
 /*FOOTER NAV BAR*/
 
+.foot_navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 40vh;
+    padding-right: 40vh;
+
+}
 
 /*FOOTER*/
 
 .footer {
-    height: 20vh;
+    height: 28vh;
     background-color: #EE3D57;
+    color: #FFF;
+    text-align: center;
 }
 
+.footer p {
+    font-size: 120%;
+    font-weight: 300;
+    line-height: 150%;
+}
