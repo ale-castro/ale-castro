@@ -77,7 +77,7 @@ button:hover{
     
 }
 
-.name, .lastname { 
+.name { 
     font-size: 100px;
     font-family: Impact, Anton, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -117,9 +117,15 @@ color: white;
 line-height: 1.1; /* To control spacing */
 }
     
-.lastname {
- text-decoration: underline 3px;  
-  
+.line01 {
+    margin-top:10px;
+    border-top: 3px solid white;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
 }
 
  /* Styles for mobile phones */
@@ -134,8 +140,10 @@ line-height: 1.1; /* To control spacing */
             background-color: #404041;
             color: white;
             position: relative;
-            clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 51% 100%, 0% 76%);
+            clip-path: none;
             display: block;
+            padding-top: 8vh;
+            padding-left: 2vh;
         } 
         
         .name-container {
@@ -151,26 +159,26 @@ line-height: 1.1; /* To control spacing */
             font-weight: 500;  
         }
 
-        .design-statement-container{
+        .design-statement-container, .design-statement {
             position: relative;
-            height: 60vh; 
-            width: 80vh;   
+            height: 50vh; 
+            width: 80vh;
+            padding-top: 1vh;   
             }
-
 }
 
-    /* Styles for tablets (landscape orientation) */
+/* Styles for tablets (landscape/horizontal orientation) */
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* Add tablet-specific styles here */
+        /* Add large screen-specific styles here */
     }
 
-    /* Styles for large screens */
+/* Styles for large screens */
     @media only screen and (min-width: 1025px) {
         /* Add large screen-specific styles here */
     }
 
 
-/*--------------------- End of styling of section 1---------------------*/
+/*--------------------- End of styling of section 1-----------------------*/
 
 
 /* beguinning of styling of section 2 - about section*/
@@ -219,6 +227,16 @@ height: 90vh;
     .middle-section {
         display: flex;
         flex-direction: column;
+    }
+
+    .picture-profile {
+        width: 480px;
+        padding-bottom: 0;
+        margin-bottom: 0;    
+    }
+
+    .about {
+    padding: 0vh 6vh 10vh 6vh;  
     }
 
 }
@@ -299,8 +317,8 @@ height: 90vh;
         white-space: nowrap; /*diary study app is was wrapping in two lines and looked funky, this prevents it.*/
         }
 
-        /*----------modal-----------------------*/
-        #myBtn {
+        /*----------modal----------*/
+        #LexmarkModal {
             position: absolute;
             top: 50%;/*this and the left 50% helped me to position in the center*/
             left: 50%;
@@ -332,7 +350,31 @@ height: 90vh;
             height: 10vh;    
         }
 
-        /*End of the project section - section 3*/
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .project-grid{
+      display: flex;  
+      flex-direction: column;
+      padding-bottom: 10vh;
+    }
+
+    .project-section {    
+        height: auto;  
+    }
+
+    .project-card1{
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .project-card2{
+        text-align: center;
+        padding-right: 0;
+    }
+}        
+
+/*----------------------End of the project section - section 3------------------*/
 
         
         /*beguinning of the footer - section 4*/
@@ -441,11 +483,33 @@ height: 90vh;
         li {
             list-style: none;
         }
-            
-  /*End of the footer - section 4*/  
+         
+        
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    
+    .footer-content-grid {
+        height: 60vh;
+    }
+
+    .footer-content {
+        padding-top: 12vh;    
+    }
+
+    .footer-content {
+        padding-left: 30%; 
+    }
+
+    .bottom-left p {
+        padding-left: 3%;
+}
+
+/*-----------------End of the footer - section 4-------------------------*/ 
 
 
-/* ----------------------MODAL----------------------------*/
+
+
+/*---------------------------------MODAL-------------------------------------*/
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
