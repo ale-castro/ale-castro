@@ -38,6 +38,29 @@ button:hover{
     cursor: pointer;
 }
 
+
+a {
+    color: black;
+    background-color: transparent;
+    border: none;
+    height: 10vh;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    font-size: 100%;
+
+}
+
+a:hover {
+    cursor: pointer;
+    color: #ee3d57;
+}
+
+a:active {
+    cursor: pointer;
+    color: #ee3d57;
+}
 /*end of NAVEGATION BAR*/
 
 /*----------------------- beguinning of styling of section 1-----------------------------------*/
@@ -129,7 +152,7 @@ line-height: 1.1; /* To control spacing */
 }
 
  /* Styles for mobile phones */
- @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 576px) {
 
         .top-big-container {
             display: block;
@@ -223,7 +246,7 @@ height: 90vh;
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .middle-section {
         display: flex;
         flex-direction: column;
@@ -352,7 +375,7 @@ height: 90vh;
 
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .project-grid{
       display: flex;  
       flex-direction: column;
@@ -486,7 +509,7 @@ height: 90vh;
          
         
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     
     .footer-content-grid {
         height: 60vh;
@@ -502,6 +525,8 @@ height: 90vh;
 
     .bottom-left p {
         padding-left: 3%;
+}
+
 }
 
 /*-----------------End of the footer - section 4-------------------------*/ 
