@@ -152,7 +152,7 @@ line-height: 1.1; /* To control spacing */
 }
 
  /* Styles for mobile phones */
- @media only screen and (max-width: 576px) {
+ @media only screen and (max-width: 480px) {
 
         .top-big-container {
             display: block;
@@ -246,7 +246,7 @@ height: 90vh;
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     .middle-section {
         display: flex;
         flex-direction: column;
@@ -375,7 +375,7 @@ height: 90vh;
 
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     .project-grid{
       display: flex;  
       flex-direction: column;
@@ -509,7 +509,7 @@ height: 90vh;
          
         
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
     
     .footer-content-grid {
         height: 60vh;
