@@ -152,7 +152,7 @@ line-height: 1.1; /* To control spacing */
 }
 
  /* Styles for mobile phones */
- @media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 576px) {
 
         .top-big-container {
             display: block;
@@ -166,38 +166,40 @@ line-height: 1.1; /* To control spacing */
             clip-path: none;
             display: block;
             padding-top: 8vh;
-            padding-left: 2vh;
+            padding-left: 0;
         } 
         
         .name-container {
             position: relative;
-            text-align: center;   
+            text-align: center;
+            padding-right: 0;   
         }
 
         .topleft { 
             clip-path: none;
-            background-color: #ee3d57;
             position: relative;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 500;  
+            
         }
 
-        .design-statement-container, .design-statement {
+        .design-statement-container {
             position: relative;
-            height: 50vh; 
-            width: 80vh;
-            padding-top: 1vh;   
+            height: 35vh; 
+            width: 100%;
+            padding-top: 5vh 2vh 3vh 2vh;   
+            }
+
+        .design-statement {
+            position: inherit;
             }
 }
 
-/* Styles for tablets (landscape/horizontal orientation) */
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        /* Add large screen-specific styles here */
+    @media only screen and (min-width: 577px) and (max-width: 996px) {
+   
     }
 
-/* Styles for large screens */
-    @media only screen and (min-width: 1025px) {
-        /* Add large screen-specific styles here */
+
+    @media only screen and (min-width: 1281px){
+   
     }
 
 
@@ -246,14 +248,14 @@ height: 90vh;
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     .middle-section {
         display: flex;
         flex-direction: column;
     }
 
     .picture-profile {
-        width: 480px;
+        width: 400px;
         padding-bottom: 0;
         margin-bottom: 0;    
     }
@@ -375,7 +377,7 @@ height: 90vh;
 
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     .project-grid{
       display: flex;  
       flex-direction: column;
@@ -384,6 +386,14 @@ height: 90vh;
 
     .project-section {    
         height: auto;  
+    }
+
+    .grid-image{
+        width: 70vh;
+    }
+
+    .project-name{
+        width: 72vh;
     }
 
     .project-card1{
@@ -509,7 +519,7 @@ height: 90vh;
          
         
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
     
     .footer-content-grid {
         height: 60vh;
