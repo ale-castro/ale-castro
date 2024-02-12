@@ -248,7 +248,7 @@ height: 90vh;
 }
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 996px) {
     .middle-section {
         display: flex;
         flex-direction: column;
@@ -377,7 +377,7 @@ height: 90vh;
 
 
 /* Media Query for Mobile Devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 996px) {
     .project-grid{
       display: flex;  
       flex-direction: column;
