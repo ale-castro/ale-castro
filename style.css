@@ -165,12 +165,14 @@ line-height: 1.1; /* To control spacing */
             position: relative;
             clip-path: none;
             display: block;
-            height: 40vh;
+            height: 60vh;
         } 
-        
+
         .name-container {
             position: relative;
-            text-align: center;         
+            text-align: center;
+            left: 0;
+            width: auto;           
         }
 
         .topleft { 
@@ -181,9 +183,10 @@ line-height: 1.1; /* To control spacing */
 
         .design-statement-container {
             position: relative;
-            height: 35vh; 
+            height: 33vh; 
             width: 100%;
-            padding: 3vh 2vh 3vh 2vh; 
+            padding: 3vh 2vh 4vh 2vh;
+            margin-right: 2vh; 
         }
 
         .design-statement {
@@ -193,7 +196,15 @@ line-height: 1.1; /* To control spacing */
 
     @media only screen and (min-width: 577px) and (max-width: 996px) {
    
-    }
+   .design-statement-container{ /*This invisible container helps to position the design-statement*/
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+    height: 30vh; 
+    width: 40vh;   
+   }
+    
+}
 
 
     @media only screen and (min-width: 1281px){
@@ -249,7 +260,7 @@ height: 90vh;
 
 @media screen and (max-width: 576px) {
     .picture-profile {
-        width: 360px;
+        width: 320px;
         padding-bottom: 0;
         margin-bottom: 0;    
     }
@@ -388,11 +399,11 @@ height: 90vh;
 
 @media screen and (max-width: 576px) {
    .grid-image{
-        width: 50vh;
+        width: 40vh;
     }
 
     .project-name{
-        width: 52vh;
+        width: 42vh;
     }
 }    
 
