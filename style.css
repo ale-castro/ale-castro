@@ -165,17 +165,12 @@ line-height: 1.1; /* To control spacing */
             position: relative;
             clip-path: none;
             display: block;
-            padding-top: 8vh;
-            padding-left: 0;
+            height: 40vh;
         } 
         
         .name-container {
             position: relative;
-            text-align: center;
-            padding-right: 0;
-            position: absolute;
-            right: 0;
-     
+            text-align: center;         
         }
 
         .topleft { 
@@ -188,7 +183,7 @@ line-height: 1.1; /* To control spacing */
             position: relative;
             height: 35vh; 
             width: 100%;
-            padding: 5vh 2vh 3vh 2vh; 
+            padding: 3vh 2vh 3vh 2vh; 
         }
 
         .design-statement {
