@@ -172,7 +172,10 @@ line-height: 1.1; /* To control spacing */
         .name-container {
             position: relative;
             text-align: center;
-            padding-right: 0;   
+            padding-right: 0;
+            position: absolute;
+            right: 0;
+     
         }
 
         .topleft { 
@@ -185,8 +188,8 @@ line-height: 1.1; /* To control spacing */
             position: relative;
             height: 35vh; 
             width: 100%;
-            padding-top: 5vh 2vh 3vh 2vh;   
-            }
+            padding: 5vh 2vh 3vh 2vh; 
+        }
 
         .design-statement {
             position: inherit;
@@ -248,6 +251,16 @@ height: 90vh;
 }
 
 /* Media Query for Mobile Devices */
+
+@media screen and (max-width: 576px) {
+    .picture-profile {
+        width: 360px;
+        padding-bottom: 0;
+        margin-bottom: 0;    
+    }
+}
+
+
 @media screen and (max-width: 996px) {
     .middle-section {
         display: flex;
@@ -377,6 +390,17 @@ height: 90vh;
 
 
 /* Media Query for Mobile Devices */
+
+@media screen and (max-width: 576px) {
+   .grid-image{
+        width: 50vh;
+    }
+
+    .project-name{
+        width: 52vh;
+    }
+}    
+
 @media screen and (max-width: 996px) {
     .project-grid{
       display: flex;  
