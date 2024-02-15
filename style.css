@@ -100,7 +100,7 @@ a:active {
     
 }
 
-.name { 
+.name, .lastname { 
     font-size: 100px;
     font-family: Impact, Anton, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -166,13 +166,25 @@ line-height: 1.1; /* To control spacing */
             clip-path: none;
             display: block;
             height: 60vh;
+            text-align: center;
+            vertical-align: middle;
         } 
 
         .name-container {
             position: relative;
             text-align: center;
-            left: 0;
-            width: auto;           
+            left: 2vh;
+            width: auto;
+            right: auto; 
+            margin-top: 5vh;
+            padding-top: 11vh;
+            bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .name {
+        margin-top: 3vh;
+        padding-top: 7vh;  
         }
 
         .topleft { 
@@ -183,14 +195,22 @@ line-height: 1.1; /* To control spacing */
 
         .design-statement-container {
             position: relative;
-            height: 33vh; 
+            height: auto;
+            right: 5%; 
             width: 100%;
-            padding: 3vh 2vh 4vh 2vh;
-            margin-right: 2vh; 
+            padding: 3vh 5vh 4vh 2vh;
+            margin-right: 3%;
+
         }
 
         .design-statement {
-            position: inherit;
+            position: inherit; 
+            padding-top: 2vh;
+            right: 7%;
+            padding-bottom: 5vh;
+            display: block;
+            overflow: wrap;
+            width: 85%;
             }
 }
 
@@ -259,8 +279,12 @@ height: 90vh;
 /* Media Query for Mobile Devices */
 
 @media screen and (max-width: 576px) {
+    .photo{
+        width: 85%;
+    }
+    
     .picture-profile {
-        width: 320px;
+        width: auto;
         padding-bottom: 0;
         margin-bottom: 0;    
     }
