@@ -133,7 +133,7 @@ width: 80vh;
 /*text-shadow: 1px 1px 1px gray;*/ /* Adds a black shadow to the text */
 position: absolute;
 font-size: 26px;
-top: 13%;
+top: 30%;
 left: 2%;
 bottom: 3%;
 color: white;
@@ -250,14 +250,14 @@ line-height: 1.1; /* To control spacing */
 }
 
 .picture-profile{
-width: 500px;
+width: 80vh;
 height: auto;
 display: inline-block; /* Make the image an inline block element, so I can use the text align:center */
 vertical-align: middle;    
 }
 
 .about{
-    padding-top: 12vh;
+    padding-top: 20vh;
     padding-left: 5vh;
     padding-right: 15vh;
     font-family: 'Roboto', Arial, sans-serif;
@@ -279,30 +279,25 @@ height: 90vh;
 /* Media Query for Mobile Devices */
 
 @media screen and (max-width: 576px) {
-    .photo{
-        width: 85%;
+    .middle-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;    
     }
     
     .picture-profile {
-        width: auto;
+        width: 49vh;
         padding-bottom: 0;
-        margin-bottom: 0;    
+        margin-bottom: 0;
+        padding-right: 1.5vh;    
     }
 }
-
 
 @media screen and (max-width: 996px) {
     .middle-section {
         display: flex;
         flex-direction: column;
     }
-
-    .picture-profile {
-        width: 400px;
-        padding-bottom: 0;
-        margin-bottom: 0;    
-    }
-
+    
     .about {
     padding: 0vh 6vh 10vh 6vh;  
     }
@@ -385,8 +380,8 @@ height: 90vh;
         white-space: nowrap; /*diary study app is was wrapping in two lines and looked funky, this prevents it.*/
         }
 
-        /*----------modal----------*/
-        #LexmarkModal {
+        
+        #LexmarkModal { /* This button triggers the opening of a modal*/
             position: absolute;
             top: 50%;/*this and the left 50% helped me to position in the center*/
             left: 50%;
@@ -422,13 +417,39 @@ height: 90vh;
 /* Media Query for Mobile Devices */
 
 @media screen and (max-width: 576px) {
-   .grid-image{
-        width: 40vh;
-    }
+    .project-grid{
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;
+        padding-bottom: 10vh;
+      }
+  
+      .project-section {    
+          height: auto;  
+      }
+  
+      h1{
+        font-size: 50px;
+      }
 
-    .project-name{
-        width: 42vh;
-    }
+      .grid-image{
+          width: 97%;
+          max-width: 97%;
+      }
+  
+      .project-name{
+          width: 97%;
+          max-width: 97%;
+      }
+  
+      .project-card1, .project-card2{
+          width: 98%;
+          text-align: center;
+          padding: 0;
+      }
+
+
+  
+    
 }    
 
 @media screen and (max-width: 996px) {
@@ -589,6 +610,8 @@ height: 90vh;
 
     .bottom-left p {
         padding-left: 3%;
+        overflow: wrap;
+        padding-right: 20%;
 }
 
 }
@@ -653,4 +676,13 @@ height: 90vh;
 
 .password-style {
     padding-left: 10vh;
+}
+
+
+@media screen and (max-width: 576px) {
+    .modal {
+        left: 10px;
+    }  
+
+
 }
