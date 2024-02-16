@@ -63,6 +63,13 @@ a:active {
 }
 /*end of NAVEGATION BAR*/
 
+
+@media only screen and (min-width: 1281px){
+    button {
+        font-size:xx-large;
+        }    
+    
+}
 /*----------------------- beguinning of styling of section 1-----------------------------------*/
 
 .top-big-container {
@@ -215,20 +222,31 @@ line-height: 1.1; /* To control spacing */
 }
 
     @media only screen and (min-width: 577px) and (max-width: 996px) {
-   
-   .design-statement-container{ /*This invisible container helps to position the design-statement*/
-    position: absolute;
-    left: 3%;
-    bottom: 3%;
-    height: 30vh; 
-    width: 40vh;   
-   }
+    .top-big-container{
+        max-height: 60%;
+    }
+
+    .design-statement-container{ /*This invisible container helps to position the design-statement*/
+        position: absolute;
+        left: 3%;
+        bottom: 3%;
+        height: 30vh; 
+        width: 40vh;   
+    }
     
 }
 
 
     @media only screen and (min-width: 1281px){
-   
+        .name, .lastname { 
+            font-size: 200px;
+        }
+        
+        .design-statement {
+            font-size: 50px;
+            top: 18%
+            }
+        
     }
 
 
@@ -269,12 +287,7 @@ vertical-align: middle;
     vertical-align: middle;   
 }
 
-.project-section{
-background-color: #404041;
-color: white;
-position: relative;
-height: 90vh;   
-}
+
 
 /* Media Query for Mobile Devices */
 
@@ -299,15 +312,29 @@ height: 90vh;
     }
     
     .about {
-    padding: 0vh 6vh 10vh 6vh;  
+        padding: 0vh 6vh 10vh 6vh;  
     }
 
+}
+
+@media only screen and (min-width: 1281px){
+    .about {
+         font-size: 150%;
+         line-height: 40px; 
+        }
 }
 
 /*---------------------------- end of styling of section 2 - about section-----------------------*/
 
 
         /*beguinning of the project section - section 3*/
+        
+        .project-section{
+            background-color: #404041;
+            color: white;
+            position: relative;
+            height: 90vh;   
+            }
 
         .project-grid{
             display: grid;
@@ -432,17 +459,17 @@ height: 90vh;
       }
 
       .grid-image{
-          width: 97%;
-          max-width: 97%;
+          width: 99%;
+          max-width: 99%;
       }
   
       .project-name{
-          width: 97%;
-          max-width: 97%;
+          width: 100%;
+          max-width: 100%;
       }
   
       .project-card1, .project-card2{
-          width: 98%;
+          width: 100%;
           text-align: center;
           padding: 0;
       }
@@ -593,7 +620,7 @@ height: 90vh;
         }
          
         
-/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices portrait */
 @media screen and (max-width: 576px) {
     
     .footer-content-grid {
@@ -609,10 +636,15 @@ height: 90vh;
     }
 
     .bottom-left p {
-        padding-left: 3%;
-        overflow: wrap;
-        padding-right: 20%;
+        padding-left: 4%;
+        word-wrap: break-word;
+        padding-right: 25%;
 }
+
+}
+
+/* Media Query for Mobile Devices portrait*/
+@media screen and (max-width: 576px) {
 
 }
 
@@ -682,6 +714,8 @@ height: 90vh;
 @media screen and (max-width: 576px) {
     .modal {
         left: 10px;
+        width: 600px;
+        height: 500px;
     }  
 
 
