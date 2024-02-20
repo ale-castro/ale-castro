@@ -221,6 +221,8 @@ line-height: 1.1; /* To control spacing */
             }
 }
 
+/*phones landscape*/
+
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     .top-big-container{
         max-height: 60%;
@@ -228,7 +230,7 @@ line-height: 1.1; /* To control spacing */
     }    
         
     .name-container{
-        top: 3vh; /*new*/
+        top: 4vh; /*new*/
         right: 5vh;
         padding-right: 0;
         text-align: auto;
@@ -237,18 +239,20 @@ line-height: 1.1; /* To control spacing */
     .design-statement-container{ 
         height: auto; 
         width: auto;
-        bottom: auto;   
+        bottom: 1vh;   
     }
 
     .design-statement {
         top: 5%;
+        font-size: 24px;
         }
 }
 
 
+/*tablets portrait*/
     @media only screen and (min-width: 769px) and (max-width: 996px) {
     .top-big-container{
-        height: auto;
+        height: 60vh;
     }    
         
     .name-container{
@@ -479,12 +483,12 @@ vertical-align: middle;
         }
 
 
-/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices portrait*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .project-grid{
         grid-template-columns: 1fr;  
-        grid-template-rows: auto;   
+        grid-template-rows: auto;
         padding-bottom: 10vh;
       }
   
@@ -507,13 +511,46 @@ vertical-align: middle;
       }
   
       .project-card1, .project-card2{
-          width: 100%;
+          width: 99.5%;
           text-align: center;
           padding: 0;
       }    
 }
 
 
+/*mobile devices landscape*/
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .project-grid{
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;
+        padding-bottom: 10vh;
+      }
+  
+      .project-section {    
+          height: auto;  
+      }
+  
+      h1{
+        font-size: 60px;
+      }
+
+      .grid-image{
+          width: 160%;
+      }
+  
+     .project-name{
+          width: 160%;
+      }
+  
+      .project-card1, .project-card2 {
+          text-align: center;
+          padding-left: 5vh;
+          padding-right: 5vh;
+          width: 100vh;
+      }    
+}
+
+/*tablets portrait*/
 @media screen and (min-width:769px) and (max-width: 996px) {
     
     .project-grid{
@@ -692,7 +729,7 @@ vertical-align: middle;
         padding-left: 3%;
         word-wrap: break-word;
         padding-right: 25%;
-        font-size: 11px;
+        font-size: 12px;
 }
 
     .photographers {
@@ -780,7 +817,7 @@ vertical-align: middle;
 
 @media screen and (max-width: 576px) {
     .modal {
-        left: 10px;
+        left: 4px;
         width: 600px;
         height: 500px;
     }  
