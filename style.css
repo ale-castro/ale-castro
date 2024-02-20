@@ -224,16 +224,22 @@ line-height: 1.1; /* To control spacing */
     @media only screen and (min-width: 577px) and (max-width: 996px) {
     .top-big-container{
         max-height: 60%;
+    }    
+        
+    .name-container{
+        right: 5vh;
+        padding-right: 0;
+        text-align: auto;
     }
 
-    .design-statement-container{ /*This invisible container helps to position the design-statement*/
-        position: absolute;
-        left: 3%;
-        bottom: 3%;
+    .design-statement-container{ 
         height: 30vh; 
         width: 40vh;   
     }
-    
+
+    .design-statement {
+        top: 10%;
+        }
 }
 
 
@@ -443,7 +449,7 @@ vertical-align: middle;
 
 /* Media Query for Mobile Devices */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 776px) {
     .project-grid{
         grid-template-columns: 1fr;  
         grid-template-rows: auto;
@@ -459,8 +465,8 @@ vertical-align: middle;
       }
 
       .grid-image{
-          width: 99%;
-          max-width: 99%;
+          width: 98%;
+          max-width: 98%;
       }
   
       .project-name{
@@ -472,14 +478,14 @@ vertical-align: middle;
           width: 100%;
           text-align: center;
           padding: 0;
-      }
+      }    
+}
 
 
-  
+
+
+@media screen and (min-width:577px) and (max-width: 996px) {
     
-}    
-
-@media screen and (max-width: 996px) {
     .project-grid{
       display: flex;  
       flex-direction: column;
@@ -507,7 +513,24 @@ vertical-align: middle;
         text-align: center;
         padding-right: 0;
     }
-}        
+}
+
+
+@media only screen and (min-width: 1281px) { 
+    .project-name{
+        width: 81vh;
+    }
+
+    #LexmarkModal{
+        font-size: 150%;
+    }
+
+    .project-name p{ 
+        font-size: 150%;
+    }
+
+}
+
 
 /*----------------------End of the project section - section 3------------------*/
 
@@ -639,14 +662,23 @@ vertical-align: middle;
         padding-left: 4%;
         word-wrap: break-word;
         padding-right: 25%;
+        font-size: 14px;
 }
 
 }
 
-/* Media Query for Mobile Devices portrait*/
-@media screen and (max-width: 576px) {
+@media only screen and (min-width: 1281px){
+    .bottom-left p {
+        font-size: 200%;
+        padding-right: 15%;
+}
+
+.footer-content p {
+    font-size: 200%; 
+}
 
 }
+
 
 /*-----------------End of the footer - section 4-------------------------*/ 
 
