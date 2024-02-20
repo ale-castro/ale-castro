@@ -336,6 +336,13 @@ vertical-align: middle;
     }
 }
 
+@media screen and (min-width: 577px) and (max-width: 768px) {
+   
+    .picture-profile {
+        width: 65vh;    
+    }
+}
+
 @media screen and (max-width: 996px) {
     .middle-section {
         display: flex;
@@ -474,7 +481,7 @@ vertical-align: middle;
 
 /* Media Query for Mobile Devices */
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 576px) {
     .project-grid{
         grid-template-columns: 1fr;  
         grid-template-rows: auto;
@@ -689,6 +696,11 @@ vertical-align: middle;
         padding-right: 25%;
         font-size: 11px;
 }
+
+    .photographers {
+        padding-bottom: 0;
+        top: 8vh;
+    }
 
 }
 
