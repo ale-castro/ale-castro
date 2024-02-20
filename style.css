@@ -484,7 +484,8 @@ vertical-align: middle;
 
 
 
-@media screen and (max-width: 996px) {
+@media screen and (min-width:577px) and (max-width: 996px) {
+    
     .project-grid{
       display: flex;  
       flex-direction: column;
@@ -512,7 +513,24 @@ vertical-align: middle;
         text-align: center;
         padding-right: 0;
     }
-}        
+}
+
+
+@media only screen and (min-width: 1281px) { 
+    .project-name{
+        width: 81vh;
+    }
+
+    #LexmarkModal{
+        font-size: 150%;
+    }
+
+    .project-name p{ 
+        font-size: 150%;
+    }
+
+}
+
 
 /*----------------------End of the project section - section 3------------------*/
 
@@ -644,7 +662,19 @@ vertical-align: middle;
         padding-left: 4%;
         word-wrap: break-word;
         padding-right: 25%;
-        font-size: 18px;
+        font-size: 14px;
+}
+
+}
+
+@media only screen and (min-width: 1281px){
+    .bottom-left p {
+        font-size: 200%;
+        padding-right: 15%;
+}
+
+.footer-content p {
+    font-size: 200%; 
 }
 
 }
