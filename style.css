@@ -63,6 +63,12 @@ a:active {
 }
 /*end of NAVEGATION BAR*/
 
+@media only screen and (max-width: 576px){
+    .navbar, button, a {
+        padding-bottom: 0;
+        }    
+    
+}
 
 @media only screen and (min-width: 1281px){
     button {
@@ -164,6 +170,7 @@ line-height: 1.1; /* To control spacing */
         .top-big-container {
             display: block;
             height: auto;
+            padding-top: 0;
         }
 
         .topright {
@@ -221,9 +228,38 @@ line-height: 1.1; /* To control spacing */
             }
 }
 
-    @media only screen and (min-width: 577px) and (max-width: 996px) {
+/*phones landscape*/
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
     .top-big-container{
         max-height: 60%;
+        
+    }    
+        
+    .name-container{
+        top: 4vh; /*new*/
+        right: 5vh;
+        padding-right: 0;
+        text-align: auto;
+    }
+
+    .design-statement-container{ 
+        height: auto; 
+        width: auto;
+        bottom: 1vh;   
+    }
+
+    .design-statement {
+        font-size: 24px;
+        top: 34%;
+        }
+}
+
+
+/*tablets portrait*/
+    @media only screen and (min-width: 769px) and (max-width: 996px) {
+    .top-big-container{
+        height: 60vh;
     }    
         
     .name-container{
@@ -308,6 +344,13 @@ vertical-align: middle;
         padding-bottom: 0;
         margin-bottom: 0;
         padding-right: 1.5vh;    
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+   
+    .picture-profile {
+        width: 60%;    
     }
 }
 
@@ -414,13 +457,13 @@ vertical-align: middle;
         }
 
         
-        #LexmarkModal { /* This button triggers the opening of a modal*/
+        /*#LexmarkModal { 
             position: absolute;
-            top: 50%;/*this and the left 50% helped me to position in the center*/
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /*this refines the vertical and horizontal position*/
+            transform: translate(-50%, -50%); 
             margin: 0;
-            white-space: nowrap; /*diary study app is was wrapping in two lines and looked funky, this prevents it.*/
+            white-space: nowrap; 
             font-family: 'Courier New', Courier, monospace;
             font-size: 25px;
             font-weight: 650;
@@ -429,6 +472,7 @@ vertical-align: middle;
             color: white;
             text-decoration: none;
         }
+        */
 
         .project-card1{
             text-align: center;
@@ -447,9 +491,9 @@ vertical-align: middle;
         }
 
 
-/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices portrait*/
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 576px) {
     .project-grid{
         grid-template-columns: 1fr;  
         grid-template-rows: auto;
@@ -475,16 +519,47 @@ vertical-align: middle;
       }
   
       .project-card1, .project-card2{
-          width: 100%;
+          width: 99.5%;
           text-align: center;
           padding: 0;
       }    
 }
 
 
+/*mobile devices landscape*/
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .project-grid{
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;
+        padding-bottom: 10vh;
+      }
+  
+      .project-section {    
+          height: auto;  
+      }
+  
+      h1{
+        font-size: 60px;
+      }
 
+      .grid-image{
+          width: 160%;
+      }
+  
+     .project-name{
+          width: 160%;
+      }
+  
+      .project-card1, .project-card2 {
+          text-align: center;
+          padding-left: 15vh;
+          padding-right: 5vh;
+          width: 100vh;
+      }    
+}
 
-@media screen and (min-width:577px) and (max-width: 996px) {
+/*tablets portrait*/
+@media screen and (min-width:769px) and (max-width: 996px) {
     
     .project-grid{
       display: flex;  
@@ -655,16 +730,34 @@ vertical-align: middle;
     }
 
     .footer-content {
-        padding-left: 30%; 
+        padding-left: 35%; 
     }
 
     .bottom-left p {
-        padding-left: 4%;
+        padding-left: 3%;
         word-wrap: break-word;
         padding-right: 25%;
-        font-size: 14px;
+        font-size: 12px;
 }
 
+    .photographers {
+        padding-bottom: 0;
+        top: 8vh;
+        left: 24vh;
+    }
+
+    .linkedin-logo{
+        width: 15%;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    
+    .photographers {
+        padding-bottom: 0;
+        top: 8vh;
+    }
 }
 
 @media only screen and (min-width: 1281px){
@@ -745,10 +838,22 @@ vertical-align: middle;
 
 @media screen and (max-width: 576px) {
     .modal {
-        left: 10px;
+        left: 4px;
         width: 600px;
         height: 500px;
-    }  
+    }
+    
+    .modal-content{
+        margin-right: 0;
+        padding-left: 5px;
+    }
+}
 
-
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .modal {
+        left: 10px;
+        width: 800px;
+        height: 800px;
+    }
+    
 }
