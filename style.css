@@ -457,13 +457,13 @@ vertical-align: middle;
         }
 
         
-        #LexmarkModal { /* This button triggers the opening of a modal*/
+        /*#LexmarkModal { 
             position: absolute;
-            top: 50%;/*this and the left 50% helped me to position in the center*/
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /*this refines the vertical and horizontal position*/
+            transform: translate(-50%, -50%); 
             margin: 0;
-            white-space: nowrap; /*diary study app is was wrapping in two lines and looked funky, this prevents it.*/
+            white-space: nowrap; 
             font-family: 'Courier New', Courier, monospace;
             font-size: 25px;
             font-weight: 650;
@@ -472,6 +472,7 @@ vertical-align: middle;
             color: white;
             text-decoration: none;
         }
+        */
 
         .project-card1{
             text-align: center;
