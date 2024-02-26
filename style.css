@@ -496,7 +496,7 @@ vertical-align: middle;
 @media screen and (max-width: 576px) {
     .project-grid{
         grid-template-columns: 1fr;  
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr; /*Feb. 26 from auto i put especifically 1fr 1fr*/
         padding-bottom: 10vh;
       }
   
@@ -530,7 +530,7 @@ vertical-align: middle;
 @media screen and (min-width: 577px) and (max-width: 768px) {
     .project-grid{
         grid-template-columns: 1fr;  
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr; /*Feb. 26 from auto i put especifically 1fr 1fr*/
         padding-bottom: 10vh;
       }
   
