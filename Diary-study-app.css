@@ -111,7 +111,7 @@ a:active {
 .normal {
     font-weight: 300;
     font-size: 120%;
-    line-height: 140%;
+    line-height: 170%;
 }
 
 .line3 {
@@ -170,7 +170,7 @@ h1 {
     padding-bottom: 2%;
 }
 
-/* ----------------------- arrow + tittle ----------------------*/
+/* --------- arrow + it's an app the right solution? -------------*/
 
 .flex-arrow {
     display: flex;
@@ -187,3 +187,8 @@ h1 {
     padding-left: 15vh;
     padding-right: 15vh;
 }
+
+.flex-prompt{
+    display: flex;
+}
+
