@@ -6,7 +6,7 @@ body {
 
 /*to delete later*/
 .temporary-element{
-    font-size: 10px;
+    font-size: 120%;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -456,6 +456,20 @@ vertical-align: middle;
         white-space: nowrap; /*diary study app is was wrapping in two lines and looked funky, this prevents it.*/
         }
 
+
+        .project-grid button, .project-grid a {
+           color: white; 
+        }
+
+        .project-grid button:hover, .project-grid a:hover {
+            cursor: pointer;
+            color: #ee3d57; 
+         }
+
+         .project-grid button:active, .project-grid a:active {
+            cursor: pointer;
+            color: #ee3d57; 
+         } 
         
         /*#LexmarkModal { 
             position: absolute;

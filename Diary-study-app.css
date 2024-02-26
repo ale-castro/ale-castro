@@ -3,7 +3,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*NAV BAR*/
+
+/*--------------------temporary-----------------------------------*/
+
+.temporary-element {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+}
+
+/*--------------------NAV BAR-----------------------------------*/
 .navbar {
     display: flex;
     justify-content: right;
@@ -37,7 +45,7 @@ a:active {
     color: #ee3d57;
 }
 
-/* banner*/
+/*--------------------- banner----------------------------------*/
 
 .jumbotron {
     position: relative;
@@ -55,20 +63,22 @@ a:active {
 .jumbotron p {
     color: #FFF;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 128px;
+    font-size: 800%;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-right: 15%;
+    padding-left: 7%;
+    top: 15%;
+    left: 10%;
+    /*transform: translate(-50%, -50%);*/
 }
 
 .line1 {
     margin-top: 10px;
     border-top: 2px solid white;
-    width: 42%;
+    width: 65%;
     text-align: center;
     padding-bottom: 5%;
     margin-left: auto;
@@ -83,7 +93,7 @@ a:active {
 .line2 {
     margin-top: 10px;
     border-top: 2px solid white;
-    width: 42%;
+    width: 65%;
     text-align: center;
     padding-bottom: 5%;
     margin-left: auto;
@@ -95,7 +105,7 @@ a:active {
     transform: translate(-50%, -50%);
 }
 
-/* ------------ End of Lexmark banner------------------*/
+/* ------------ End of Diary banner------------------*/
 
 /* ------------------- universal stuff ----------------*/
 .normal {
@@ -116,14 +126,51 @@ h1 {
     text-align: center;
 }
 
-/* ------------------- The prompt --------------------*/
+/* --- brief description of this project +  the prompt */
 
-.padding1{
+.padding1 {
     text-align: center;
-    padding-left: 10vh 30vh;
+    padding: 10vh 15vh;
 }
 
-/* ----------------------- arrow ----------------------*/
+.padding2 {
+    text-align: center;
+    padding: 8% 5% 5% 5%;
+    background-color: #404041;
+    margin-right: 13vh;
+    margin-left: 13vh;
+    margin-bottom: 10vh;   
+}
+
+.padding2 p{
+    text-align: right;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    margin-right: 4%;
+
+}
+
+/* ---------------------- round box (note) ----------------------- */
+
+.round-box {
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid #D5D5D5;
+    gap: 2%;
+    width: 80%;
+    box-shadow: 2px 2px 2px gray;
+    margin-left: 10%;
+    margin-bottom: 5%;
+
+}
+
+.round-box p,  {
+    padding-bottom: 2%;
+}
+
+/* ----------------------- arrow + tittle ----------------------*/
 
 .flex-arrow {
     display: flex;
@@ -131,5 +178,12 @@ h1 {
     font-weight: 500;
     font-size: 120%;
     gap: 5vh;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
+}
+
+.padding3 {
+    text-align: center;
+    margin: 0;
+    padding-left: 15vh;
+    padding-right: 15vh;
 }
