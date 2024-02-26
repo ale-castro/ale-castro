@@ -95,9 +95,9 @@ a:active {
     transform: translate(-50%, -50%);
 }
 
-/* ------------------- End of Lexmark banner--------------------*/
+/* ------------ End of Lexmark banner------------------*/
 
-/* ------------------- universal stuff --------------------*/
+/* ------------------- universal stuff ----------------*/
 .normal {
     font-weight: 300;
     font-size: 120%;
@@ -123,3 +123,13 @@ h1 {
     padding-left: 10vh 30vh;
 }
 
+/* ----------------------- arrow ----------------------*/
+
+.flex-arrow {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 120%;
+    gap: 5vh;
+    padding-bottom: 3vh;
+}
