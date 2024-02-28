@@ -853,7 +853,7 @@ vertical-align: middle;
 @media screen and (max-width: 576px) {
     .modal {
         left: 4px;
-        width: 580px;
+        width: 598px;
         height: 500px;
     }
     
@@ -861,7 +861,7 @@ vertical-align: middle;
         /*margin-right: 0px; from 0 to 5 got to much to the right*/ 
         padding-left: 0px; /*from 5 to 0 nothing happened*/
         /*padding-right: 15px; new*/
-        margin-left: 0;
+        margin: 0 auto; /*sometimes works to center*/
     }
 }
 

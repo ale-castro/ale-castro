@@ -119,7 +119,7 @@ a:active {
     border-top: 2px solid #ee3d57;
     width: 10%;
     margin: 0 auto;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
 }
 
 h1 {
@@ -190,6 +190,8 @@ h1 {
 .flex-prompt{
     display: flex;
     gap: 5%;
+    padding-bottom: 10vh;
+
 }
 
 .flex-prompt img {
@@ -201,5 +203,23 @@ h1 {
     background-color: #404041;
     color: white;
     padding: 6%;
+}
+
+/*---------------------ASSUMPTIONS ----------------------------*/
+
+.rounded-box{
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid #D5D5D5;
+    width: 75%;
+    box-shadow: 2px 2px 2px gray;;
+    margin-bottom: 5%;
+    margin: 0 auto;
+    
+}
+
+.padding4{
+    text-align: center;
+    padding: 3vh 5vh;
 }
 
