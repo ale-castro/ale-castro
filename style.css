@@ -523,8 +523,8 @@ vertical-align: middle;
       }
 
       .grid-image{
-          width: 98%;
-          max-width: 98%;
+          width: 100%;
+          max-width: 100%;
       }
   
       .project-name{
@@ -853,14 +853,19 @@ vertical-align: middle;
 @media screen and (max-width: 576px) {
     .modal {
         left: 4px;
-        width: 600px;
+        width: 580px;
         height: 500px;
     }
     
     .modal-content{
-        margin-right: 5px; /*from 0 to 5*/
-        padding-left: 0px; /*from 5 to 0*/
-        padding-right: 10px; /*new*/
+        width: 50%;
+        /*margin-right: 0px; from 0 to 5 got to much to the right*/ 
+        padding-left: 0px; /*from 5 to 0 nothing happened*/
+        padding-right: 15px; /*new*/
+    }
+
+    .modal-content h2 {
+        width: 60%;
     }
 }
 

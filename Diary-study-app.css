@@ -184,11 +184,22 @@ h1 {
 .padding3 {
     text-align: center;
     margin: 0;
-    padding-left: 15vh;
-    padding-right: 15vh;
+    padding: 0 15vh 10vh 15vh;
 }
 
 .flex-prompt{
     display: flex;
+    gap: 5%;
+}
+
+.flex-prompt img {
+    padding-left: 20%;
+    padding-bottom: 20%;
+}
+
+.flex-prompt p{
+    background-color: #404041;
+    color: white;
+    padding: 6%;
 }
 
