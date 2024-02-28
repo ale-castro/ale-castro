@@ -126,6 +126,26 @@ h1 {
     text-align: center;
 }
 
+.italic-light{
+    font-style: italic;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 120%;
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+}
+
+.italic-bold{
+    font-style: italic;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 120%;
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+}
+
 /* --- brief description of this project +  the prompt */
 
 .padding1 {
@@ -137,9 +157,7 @@ h1 {
     text-align: center;
     padding: 8% 5% 5% 5%;
     background-color: #404041;
-    margin-right: 13vh;
-    margin-left: 13vh;
-    margin-bottom: 10vh;   
+    margin: 8vh 13vh 10vh 13vh;   
 }
 
 .padding2 p{
@@ -177,14 +195,18 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     font-size: 120%;
-    gap: 5vh;
     padding-bottom: 2vh;
 }
 
-.padding3 {
+.padding3 { /*semi universal padding*/
     text-align: center;
     margin: 0;
-    padding: 0 15vh 10vh 15vh;
+    padding: 0 18vh 10vh 18vh;
+}
+
+.padding3 p {
+    display: inline-block;
+    margin: 0;
 }
 
 .flex-prompt{
@@ -202,11 +224,18 @@ h1 {
 .flex-prompt p{
     background-color: #404041;
     color: white;
-    padding: 6%;
+    margin: 0;
+    display: inline-block;
 }
 
-/*---------------------ASSUMPTIONS ----------------------------*/
+.padding4{
+    padding: 6%;
+    background-color: #404041;
+}
 
+/*Narrowing down: use universal parameters + padding3 no code needed*/
+
+/*---------------------Assumptions ----------------------------*/
 .rounded-box{
     text-align: center;
     border-radius: 50px;
@@ -215,10 +244,9 @@ h1 {
     box-shadow: 2px 2px 2px gray;;
     margin-bottom: 5%;
     margin: 0 auto;
-    
 }
 
-.padding4{
+.padding5{
     text-align: center;
     padding: 3vh 5vh;
 }

@@ -854,15 +854,25 @@ vertical-align: middle;
     .modal {
         left: 4px;
         width: 598px;
-        height: 500px;
+        height: auto; /*was 500 px*/
     }
     
     .modal-content {
-        /*margin-right: 0px; from 0 to 5 got to much to the right*/ 
+        margin-left: 0px; /*new before marign right 0 and 5*/ 
         padding-left: 0px; /*from 5 to 0 nothing happened*/
         /*padding-right: 15px; new*/
-        margin: 0 auto; /*sometimes works to center*/
+        /*margin: 0 auto; /* Did not work --- off scrsometimes works to center*/
     }
+
+    .modal-content #passwordInput, 
+    .modal-content #submitButton,
+    .modal-content h2, 
+    .modal-content p {
+        margin: 0;
+        padding-left: 0px;   
+    }
+
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
