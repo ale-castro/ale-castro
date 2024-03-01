@@ -153,7 +153,45 @@ h1 {
     font-weight: 300;
     font-size: 100%;
     line-height: 170%;
+    display: inline-block;
     font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+.ita-bold-under { /*small*/
+    font-style: italic;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.italight-under{ /*small*/
+    font-style: italic;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.x-smaller {
+    font-weight: 300;
+    font-size: 90%;
+    font-family: 'Roboto', Arial, sans-serif;
+}    
+
+
+.giant {
+    font-size: 600%;
+    font-weight: 1000;
+    padding: 0;
+    margin: 0;
 }
 
 /* --- brief description of this project +  the prompt */
@@ -178,6 +216,8 @@ h1 {
     margin-right: 4%;
 
 }
+
+
 
 /* ---------------------- round box (note) ----------------------- */
 
@@ -269,7 +309,7 @@ h1 {
 }
 
 .list1{
-    padding: 6%;
+    padding: 8% 6% 6% 6%;
     background-color: rgba(215, 210, 201, 0.47)
 }
 
@@ -280,4 +320,67 @@ h1 {
 /*--------------- Recruiting of Participants---------------*/
 .flex-users{
     display: flex;
+    padding-top: 3%;
+}
+
+.flex-users img{
+    padding: 0% 10% 10% 10%;
+}
+
+.flex-users p{
+    padding: 4% 0% 3% 6%;
+}
+
+/*--------------- Diart study Prompt---------------*/
+
+.prompt {
+    background-color: #404041;
+    color: #FFF;
+}
+
+.flex-two-col{
+    display: flex;
+    flex: 1;
+    gap: 10%;
+    padding: 2% 0 6% 0;
+}
+
+.flex-two-col p {
+    text-align: justify;
+}
+
+.flex-two-col p:first-child {
+    padding-left: 10%;
+}
+
+.flex-two-col p:nth-child(2) {
+    padding-right: 10%;
+}
+
+/*--------------- Some responses---------------*/
+
+.research-responses{
+    padding: 3% 0 5% 12%;
+}
+
+.research-responses p:nth-child(2) {
+    padding-bottom: 3%;
+}
+
+.research-responses img:nth-child(3) {
+    padding-left: 12%;
+}
+
+/*--------------------------- Insights ---------------------*/
+
+.insights {
+    padding: 0% 10% 5% 10%;
+}
+
+/*-------------------Design Implications ---------------------*/
+
+.flex1{
+    display: flex;
+    background-color: #404041;
+    color: #FFF;
 }
