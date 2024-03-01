@@ -869,7 +869,7 @@ vertical-align: middle;
     .modal-content h2, 
     .modal-content p {
         margin: 0;
-        padding-left: 0px;   
+        padding: 0px;   /*decia padding-left cambie todo el padding a 0*/
     }
 
 
