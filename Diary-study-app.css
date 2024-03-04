@@ -157,6 +157,14 @@ h1 {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+.sm-bold-nodecor { /*small*/
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 170%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
 
 .sm-bold-under { /*small*/
     font-weight: 600;
@@ -377,20 +385,107 @@ h1 {
 }
 
 /*-------------------Design Implications ---------------------*/
-
 .big-gray-box{
+    margin-top: 3%;
+    padding: 4% 2% ;
     background-color: #404041;
 }
 
 .flex1, .flex2 {
     display: flex;
     background-color: #404041;
+    gap: 3%;
 }
 
-.flex1{
-    padding: ;
+.flex1 {
+    padding: 2% 14% 2% 8%;
 }
 
-.texto{
+.flex2 {
+    padding: 2% 9% 2% 18%;
+}
+
+.texto, .white {
     color: #fff;
+}
+
+.gray1 {
+    color: rgb(176, 176, 176);
+}
+
+.gray2 {
+    color: #7B7B7B;
+}
+
+.gp {
+    padding-top: 1%;
+}
+
+.gp2 {
+    padding-top: 2%;
+}
+
+/*----Types of diaries, ways of data entry and why the matter-----*/
+
+
+.flex-arrow2 {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 120%;
+    gap: 1.5%;
+    padding-top: 7%;
+}
+
+.flex-arrow2 h2 {
+    padding-right: 15%;
+    text-align: center;
+}
+
+.findings-flex {
+    display: flex;
+    gap: 3%;
+    padding: 0% 8% 5% 8%;
+}
+
+.findings {
+    border-radius: 30px;
+    border: 2px solid #EE3D57;
+    margin-top: 4%;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.findings p:nth-child(1) {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.findings p:nth-child(2) {
+    text-align: center;
+    padding: 0 5% 5% 5%;
+}
+
+
+
+/*-----------------------More assumptions----------------------------------*/
+
+.grey-tiny-box-left {
+    margin-top: 5vh;
+    background: #404041;
+    width: 5vh;
+    height: 18vh;
+    display: inline-block;
+    position: absolute;
+}
+
+.side-note1 {
+    display: inline-block;
+    padding-left: 10vh;
+    padding-top: 3vh;
+    padding-bottom: 10vh;
+}
+
+.side-note1 p {
+    font-weight: 700;
+    font-size: 120%;
 }
