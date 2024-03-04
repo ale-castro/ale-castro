@@ -874,10 +874,10 @@ vertical-align: middle;
     .modal-content #passwordInput, 
     .modal-content #submitButton, 
     .modal-content p {
-        margin: 0;
+        margin-left: 0;
         padding: 0;   /*decia padding-left cambie todo el padding a 0*/
         box-sizing: border-box; /*new*/
-        padding-right: 15%; /*new*/
+        /*padding-right: 15%; /*new*/
     }
 
 

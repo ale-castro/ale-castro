@@ -158,8 +158,7 @@ h1 {
 }
 
 
-.ita-bold-under { /*small*/
-    font-style: italic;
+.sm-bold-under { /*small*/
     font-weight: 600;
     font-size: 100%;
     line-height: 170%;
@@ -379,8 +378,19 @@ h1 {
 
 /*-------------------Design Implications ---------------------*/
 
-.flex1{
+.big-gray-box{
+    background-color: #404041;
+}
+
+.flex1, .flex2 {
     display: flex;
     background-color: #404041;
-    color: #FFF;
+}
+
+.flex1{
+    padding: ;
+}
+
+.texto{
+    color: #fff;
 }
