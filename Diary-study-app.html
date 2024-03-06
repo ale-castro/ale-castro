@@ -108,11 +108,13 @@
     <div class="flex-rules">
             <div class="list1">
                 <p class="smaller">A user researcher needs to identify the needs and motivations of food preferences of potential customers . In doing so, they/she/he need/s to gather the following information:</p>
-                <li class="smaller">How often the participant cooks their own meals or buys prepared food (for instance, going to a restaurant, food bars at supermarkets etc.). The ones who buy more often instead of cooking could be potential customers.</li>
-                <li class="smaller">Frequent/repeated behaviors when it comes to food choices.</li>
-                <li class="smaller">Common ingredients in their meals (to help the company optimize its kitchen and supply chain processes).</li>
-                <li class="smaller">What participants do vs what participants say.</li>
-                <li class="smaller">Since a diary study is a “long-term” commitment participants of the study will get financially compensated</li>
+                <ul>
+                    <li> How often the participant cooks their own meals or buys prepared food (for instance, going to a restaurant, food bars at supermarkets etc.). The ones who buy more often instead of cooking could be potential customers.</li>
+                    <li> Frequent/repeated behaviors when it comes to food choices.</li>
+                    <li> Common ingredients in their meals (to help the company optimize its kitchen and supply chain processes).</li>
+                    <li> What participants do vs what participants say.</li>
+                    <li> Since a diary study is a “long-term” commitment participants of the study will get financially compensated</li>
+                </ul>    
             </div>
             <img src="Images/salad.svg" alt="picture of a delicious salad in a blue plate">
     </div>
@@ -278,18 +280,184 @@
             </div>
     </div>
 
-
-    <div class="grey-tiny-box-left">
-        </div>
+    <div class="flex-gray-col">
+        <div class="grey-tiny-box-left">
+        </div>   
         <div class="side-note1">
+                <h4>MORE ASSUMPTIONS</h4>
+                <ul> 
+                    <li>If pictures are not required, it might affect negatively the experiment.</li>       
+                    <li>I am assuming that the UX researcher responsible for the study will reach 
+                        out directly the participant if the participant forgets to do her/his job or if s/he 
+                        has a situation that prevent her/him to send the feedback.
+                    </li>
+                    <li>Participants will agree to schedule a post diary interview.</li>
+                    <li>Since this is a paid study participants can track how many entries they have done.</li>
+                <ul>  
+        </div> 
+    </div>   
+
+    <div class="persona-flex">
+        <img src="Images/Sydney-persona.svg" alt="Picture of a professional woman">
+        <div class="persona">
+            <h1>Persona</h1>
+            <div></div>
+            <p class="smaller">Sydney just got graduated from her M.S. in Computer Science and just moved to Chicago, and now it is working as software developer for a company that offers cloud computing services 
+                for enterprises. She does not have enough time to cook as she wishes. She has been experiencing some digestive issues, and it is getting difficult to find food on the go due to her 
+                new health concerns. She will be participating in a food habit study for a meal preparation service in order to get customized food delivered to her.
+            </p>   
+        </div>
+    </div>
+
+    <div class="flex-features">
+        <div class="list2">
+            <h2>MAIN FEATURES</h2>
             <ul>
-                <li id="note">Not all companies had all 3 persona types, this varies depending on how they operate their businesses.</li>       
-                <li id="note">The content of this portfolio piece focus mainly on the Store Manager and the Retail Associate persona types.</li>
-            <ul>  
+                <li>Type of alerts (given by prompt).</li>
+                <li>Alerts at specific time (given by prompt).</li>
+                <li>Providing media entries and description box.</li>
+                <li>Entry log, so participant can see how many entries they have done (but edits will not be allowed).</li>
+            </ul>    
+        </div>
+        <img src="Images/making-meal-picture.svg" alt="picture of someone taking a picture with her phone of her meals">
+    </div>
 
-        </div>    
+    <h1>Design & Iterations</h1>
+    <div class="line3"></div>
+    <div class="external-flex">
+        
+        <div class="internal-flexcol">    
+            <img src="Images/low-fi-part1.svg" alt="a low fidelity wireframe">    
+            <div> <!--parrafo-->
+                <p class="smaller"> I started sketching different ways to accomplish the proposed features and iterated based on user feedback (I performed a series of usability testing with 3 participants). 
+                    All the screens were designed
+                    <span class="sm-bold-under">
+                        taking into account Android OS controls and Google’s design materials
+                    </span>
+                    . However, for testing purposes since I could not find Android users, I tested them with Apple users. I know this is not the right thing to do, but keep in mind the time frame given. 
+                    I used paper prototypes and the app POP to test them. The picture on the right was taken during one of the tests.
+                </p>    
+            </div>
+        </div>
+        
+        <img src="Images/user-testing.svg" alt="image of user testing, a woman interacting with a phone">  
+
+    </div>
+
+    <div class="signup-flex">
+        <img src="Images/signup.svg" alt="Sign up screen of the diary app">
+               
+        <div>
+            <p class="typewriter">The sign up</p>
+            <p class="smaller">
+                It has all the standard information gathered during this part of the process. I particularly included in the sign up the phone number because one of the possible alerts that users can choose
+                is text messages, in doing so, a phone number must be registered.
+            </p>
+        </div>   
+        
+    </div>
+
+    <!--needs retouches-->
+    <div class="onboard-flex">
+        <div class="parrafo"> <!--parrafo-->
+            <p class="typewriter">Onboarding experience</p>
+            <p class="smaller">
+                During the usability testing, I evaluated a way to lead users to set up the alerts and times of the days by using notifications displayed on the app, 
+                <span class="sm-bold-under">
+                    but the experiment failed.
+                </span>
+                Two of the participants wanted to finish up the task given quickly that they completely ignored the notification. 
+                <span class="italight-under">
+                    To confirm they saw it, I asked them directly about it.
+                </span>
+                Both claimed they saw the bell, but they consciously decided that sending feedback was more important. Considering that setting the alerts and times are 
+                an important part of diary studies, I opted to add an onboarding experience. The onboarding experience will guide users step by step to choose the type of 
+                alert and different times of the day they want to be notified to create a diary entry. If later, they change their mind about the choices made, there is a 
+                likelihood they would remember they have set up them before, and will realize that it might be a way to change them if needed.
+            </p>
+        </div>
+        <img src="Images/low-fi2.svg" alt="low fidelity wireframe of the diary app">
+    </div>
+    
+    <!--AQUI VAN LAS 4 PANTALLAS INICIANDO CON EL WELCOME SCREEN-->
+
+    <img src="Images/onboarding-high-fi.svg" alt="onboarding high fidelity wireframe of the diary app">
+
+    <div class="onboard-flex">
+        <div class="parrafo"> <!--YA TIENE EL TEXTO DEFINITIVO-->
+            <p class="typewriter">Type of alerts</p>
+            <p class="smaller">
+                The standard alerts used are emails, text messages, and push notifications. However, for this particular use case time is a crucial part of the process, and emails are a slow way to notify someone about something that needs an immediate response. That is why I went with text messages, push notifications and decided to include an alarm option, because all three give the feeling of urgency  that an action has to be executed. This is an unusual way to use push notifications (typically they are sent by the app publisher in a time chosen by the publisher and not by the user), but push notifications provide a great advantage as well as alarms: 
+                <span class="sm-bold-under">
+                    they both guide the participant to the app to perform an action.
+                </span>
+            </p>
+        </div>
+        <img src="Images/welcome-screen.svg" alt="high fidelity wireframe of the diary app">
+    </div> 
 
 
+    <div class="onboard-flex">
+        <div class="parrafo"> <!--YA TIENE EL TEXTO DEFINITIVO-->
+            <p class="typewriter">Times</p>
+            <p class="smaller">
+                I found no reason to change something users are accustom to, therefore, I decided to stick to a familiar look and feel, and this particular screen ended up being very similar to the Android alarm clock.     
+            </p>
+        </div>
+        <img src="Images/alarms.svg" alt="high fidelity wireframe of the diary app">
+    </div>
+    
+    <div class="onboard-flex">
+        <div class="parrafo"> <!--parrafo-->
+            <p class="typewriter">Making an entry</p>
+            <p class="smaller">
+                During the usability testing, I noticed that participants either add a picture or a comment when the picture and description boxes are together in the same interface, 
+                <span class="sm-bold-nodecor">
+                    but never both
+                </span>
+                Someone even asked: “are they both mandatory?” Referring to the picture and comment features. Therefore, for the final design, I split it into different screens, meaning 
+                that in order to move on with the process a picture/video needs to be added enabling the NEXT button.
+            </br>
+            In addition, if participants cannot  make an entry while eating they have the option to upload a picture from their personal files whenever they have the time to register an entry.
+            </p>
+        </div>
+        <img src="Images/low-fi3-data-entry.svg" alt="low fidelity wireframe of the diary app">
+    </div>
+    
+
+    <img src="Images/data-entry-high-fi.svg" alt="data entry high fidelity wireframe of the diary app">
+
+    <p class="typewriter">Adjusting settings and additional options</p>
+    <img src="Images/settings-adj.svg" alt=" adjusting settings high fidelity wireframe of the diary app">
+
+    
+    <h1>Final design</h1>
+    <div class="line3"></div>
+    <img src="Images/final-design.svg" alt="high fidelity wireframes of the whole diary app">
+
+    <div class="credits">
+        <p class="photo-credits">PHOTOGRAPHY CREDITS:</p>
+        <ul class="photographers">
+            <p>Diary study cover - Hannah Olinger (Unsplash.com)</p>
+            <p>Salad plate - Brook Lark (Unsplash.com)</p>
+            <p>Persona - Victoria Heath (Unsplash.com)</p>
+            <p>Capturing a food picture with a cellphone - Dan Gold (Unsplash.com)</p>   
+        </ul>    
+    </div>
+
+
+
+    <div class="foot_navbar">
+        <a href="Index.html">Home</a>
+        <a href="Index.html#section3">Projects</a>
+        <a href="Resume.html">Resume</a>
+    </div>
+
+    <div class="footer">
+        <br>
+        <p>Get in touch!</p> 
+        <h2>ccastrolozano[at]outlook.com</h2>     
+        
     </div>
 
 </html>

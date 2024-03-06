@@ -201,6 +201,12 @@ h1 {
     margin: 0;
 }
 
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 160%;
+    font-weight: 600;
+}
+
 /* --- brief description of this project +  the prompt */
 
 .padding1 {
@@ -433,7 +439,7 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     font-size: 120%;
-    gap: 1.5%;
+    gap: 1%;
     padding-top: 7%;
 }
 
@@ -456,36 +462,200 @@ h1 {
 }
 
 .findings p:nth-child(1) {
-    padding-top: 5%;
+    padding-top: 10%;
     text-align: center;
 }
 
 .findings p:nth-child(2) {
     text-align: center;
-    padding: 0 5% 5% 5%;
+    padding: 0 13% 5% 13%;
 }
 
 
 
 /*-----------------------More assumptions----------------------------------*/
 
+.flex-gray-col{
+    display: flex;
+    padding-bottom: 8%;
+}
 .grey-tiny-box-left {
-    margin-top: 5vh;
+    margin-top: 3%;
     background: #404041;
-    width: 5vh;
-    height: 18vh;
-    display: inline-block;
-    position: absolute;
+    padding-left: 5%;
 }
 
 .side-note1 {
-    display: inline-block;
-    padding-left: 10vh;
-    padding-top: 3vh;
-    padding-bottom: 10vh;
+    padding: 3% 10% 0 5%;
 }
 
-.side-note1 p {
-    font-weight: 700;
+ul{
+    font-weight: 300;
+    font-size: 100%;
+    line-height: 170%;
+    display: inline-block;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/*---------------------Persona ----------------------------------*/
+
+.persona-flex{
+    display: flex;
+    padding-bottom: 8%;
+}
+
+.persona {
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+.persona h1:nth-child(1) {
+    text-align: left;
+}
+
+.persona div:nth-child(2) {
+    margin-top: 3%;
+    border-top: 2px solid #ee3d57;
+    width: 20%;
+    padding-bottom: 5vh;
+}
+
+.persona p:nth-child(3) {
+    font-style: italic;
+}
+
+/*----------------  Main Features ---------------------------*/
+
+.flex-features{
+    display: flex;
+    padding-bottom: 8%;
+}
+
+.list2 h2 {
+    padding-top: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 20%;
+}
+
+.list2 {
+    padding: 0% 10% 0 20%;
+    background-color: rgba(215, 210, 201, 0.47);
+    line-height: 3;
+}
+
+/*--------------- Design & Iterations ------------------*/
+
+.external-flex {
+    display: flex;
+    gap: 0;
+    padding: 3% 0 8% 0;
+}
+
+.internal-flexcol {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+}
+
+.internal-flexcol img{
+    padding: 3% 0 1% 0;
+    margin: 0;
+}
+
+.internal-flexcol p {
+    margin: 2% 3% 0 0;
+    padding: 0 8% 0 0;
+    
+}
+
+.external-flex img {
+    margin: 0;
+    padding: 0 8% 0 0;
+}
+
+/*--------------- the signup ------------------*/
+
+.signup-flex {
+    display: flex;
+    gap: 6%;
+    align-items: center;
+    padding: 0 20% 8% 25%;
+}
+
+/*--------------- the signup ------------------*/
+
+.onboard-flex {
+    display: flex;
+    padding: 0 5% 8% 8%;
+    gap: 3%;
+    align-items: flex-start;
+}
+
+.parrafo p:nth-child(1) {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.parrafo p:nth-child(2) {
+    line-height: 2;
+    padding-right: 4%;
+}
+.onboard-flex img:nth-child(2) {
+    max-height: 90vh;
+    max-width: auto;
+}
+
+/*--------------- the signup ------------------*/
+
+
+/*--------------- Types of alerts ------------------*/
+
+/*CREDITS transform to flexbox*/
+.credits{
+    position: relative;
+    height: 20vh;
+}
+
+.photo-credits{
+    font-size: x-small;
+    font-weight: 600;
+    display: inline-block;
+
+}
+
+.photographers{
+    font-size: x-small;
+    font-style: normal;
+    font-weight: 200;
+    position: absolute;
+    left: 20vh;
+    top: 0;
+    padding-bottom: 5vh;
+
+}
+
+
+/*FOOTER NAV BAR*/
+
+.foot_navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 40vh;
+    padding-right: 40vh;
+
+}
+
+/*FOOTER*/
+
+.footer {
+    height: 28vh;
+    background-color: #EE3D57;
+    color: #FFF;
+    text-align: center;
+}
+
+.footer p {
     font-size: 120%;
+    font-weight: 300;
+    line-height: 150%;
 }
