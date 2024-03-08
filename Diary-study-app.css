@@ -582,12 +582,12 @@ ul{
     padding: 0 20% 8% 25%;
 }
 
-/*--------------- the signup ------------------*/
+/*--------------- the onboarding ------------------*/
 
 .onboard-flex {
     display: flex;
-    padding: 0 5% 8% 8%;
-    gap: 3%;
+    padding: 0 8% 4% 8%;
+    gap: 5%;
     align-items: flex-start;
 }
 
@@ -598,54 +598,83 @@ ul{
 
 .parrafo p:nth-child(2) {
     line-height: 2;
-    padding-right: 4%;
-}
-.onboard-flex img:nth-child(2) {
-    max-height: 90vh;
-    max-width: auto;
+    padding-right: 10%;
 }
 
-/*--------------- the signup ------------------*/
+.highfi-wel {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6%;
+}
 
+/*--------------- Types of alerts + Times ------------------*/
 
-/*--------------- Types of alerts ------------------*/
+.alerts-times {
+    display: flex;
+    padding: 0 15% 8% 15%;
+    gap: 15%;
+    align-items: flex-start;
+}
 
-/*CREDITS transform to flexbox*/
+.parrafo2 p:nth-child(1) {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.parrafo2 p:nth-child(2) {
+    line-height: 2;
+    padding-right: 10%;
+}
+
+/*Making an entry: no extra code needed, reclycled  the onboarding flex----*/
+
+/*-------Adjusting settings and additional options-------*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+/*-------------- -------  Final design ------- -------*/
+
+.center2 {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+/*--------------------Credits---------------------------*/
 .credits{
-    position: relative;
-    height: 20vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 3% 0 3% 2%;
 }
 
 .photo-credits{
     font-size: x-small;
     font-weight: 600;
-    display: inline-block;
-
 }
 
 .photographers{
+    margin: 0;
     font-size: x-small;
     font-style: normal;
-    font-weight: 200;
-    position: absolute;
-    left: 20vh;
-    top: 0;
-    padding-bottom: 5vh;
-
+    font-weight: 150;
+    padding: 0 0 3% 1%; 
 }
 
 
-/*FOOTER NAV BAR*/
+/*--------------Footer navbar---------------------*/
 
 .foot_navbar {
     display: flex;
     justify-content: space-evenly;
     padding-left: 40vh;
     padding-right: 40vh;
-
 }
 
-/*FOOTER*/
+/*-------------------- footer --------------------------*/
 
 .footer {
     height: 28vh;

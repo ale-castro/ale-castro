@@ -854,16 +854,15 @@ vertical-align: middle;
     .modal {
         left: 4px;
         width: 598px;
-        height: auto; /*was 500 px*/
+        height: 550px; /*was 500 px*/
     }
     
     .modal-content {
         margin-left: 0; 
         padding-left: 0; 
         width: 100%; /*new*/
-        /*padding-right: 15px; new*/
+        padding-right: 15px; /*new*/
         /*margin: 0 auto; /* Did not work --- off scrsometimes works to center*/
-        box-sizing: border-box; /*new*/
     }
 
     .modal-content h2 {
@@ -876,8 +875,7 @@ vertical-align: middle;
     .modal-content p {
         margin-left: 0;
         padding: 0;   /*decia padding-left cambie todo el padding a 0*/
-        box-sizing: border-box; /*new*/
-        /*padding-right: 15%; /*new*/
+        padding-right: 15%; /*new*/
     }
 
 
