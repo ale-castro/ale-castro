@@ -45,6 +45,12 @@ a:active {
     color: #ee3d57;
 }
 
+@media only screen and (min-width: 1281px){
+    a {
+        font-size:xx-large;
+        }       
+}
+
 /*--------------------- banner----------------------------------*/
 
 .jumbotron {
@@ -54,10 +60,9 @@ a:active {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.lexmark-banner {
-    height: 85vh;
+.diary-banner {
     display: block;
-    width: 100%;
+    height: 95vh;
 }
 
 .jumbotron p {
@@ -105,6 +110,14 @@ a:active {
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 1281px){
+
+.jumbotron p {
+    font-size: 1200%;
+}
+
+}
+
 /* ------------ End of Diary banner------------------*/
 
 /* ------------------- universal stuff ----------------*/
@@ -141,7 +154,6 @@ h1 {
 .italic-bold{
     font-style: italic;
     font-weight: 600;
-    display: inline-block;
     font-size: 120%;
     line-height: 170%;
     padding: 0;
@@ -230,8 +242,6 @@ h1 {
 
 }
 
-
-
 /* ---------------------- round box (note) ----------------------- */
 
 .round-box {
@@ -251,6 +261,39 @@ h1 {
     padding-bottom: 2%;
 }
 
+/*universal+brief descrip+ prompt breakpoint + roundbox*/
+@media only screen and (min-width: 1281px){
+    
+    h1 {
+       font-size: 300%; 
+    }
+
+    .padding1 {
+        padding: 3vh 18vh 8vh 18vh;
+    } 
+    
+    .line3 {
+        padding-bottom: 2vh;
+    }
+
+    .padding2 {
+        margin-bottom: 3vh;
+    }
+
+    .padding2 p{
+        margin-right: 10%;
+        padding-right: 10%;
+    }
+
+    .smaller {
+        font-size: 120%;
+    }
+
+    .sm-bold-nodecor { /*small*/
+        font-size: 140%;
+    }
+
+}
 /* --------- arrow + it's an app the right solution? -------------*/
 
 .flex-arrow {
@@ -296,6 +339,23 @@ h1 {
     background-color: #404041;
 }
 
+
+
+@media only screen and (min-width: 1281px){
+    
+    .flex-arrow {
+        gap: 2%;
+        font-size: 180%;
+    }
+
+    .flex-arrow img{
+        width: 25%;
+    }
+
+    .flex-prompt img {
+        width: 110%;
+    }
+}
 /*Narrowing down: use universal parameters + padding3 no code needed*/
 
 /*---------------------Assumptions ----------------------------*/
@@ -322,7 +382,7 @@ h1 {
 }
 
 .list1{
-    padding: 8% 6% 6% 6%;
+    padding: 8% 6% 6% 5%;
     background-color: rgba(215, 210, 201, 0.47)
 }
 
@@ -389,7 +449,42 @@ h1 {
 .insights {
     padding: 0% 10% 5% 10%;
 }
+/*set of rules + salad pic, recruiting+ diary prompt+some respo+ ins breakpoint */
+@media only screen and (min-width: 1281px){
+    
+    .list1 li{
+        font-size: large;
+    }
 
+    .flex-users img{
+        width: 120%;
+    }
+    
+    .list1 {
+        padding: 5% 6% 0 5%;
+        
+    }
+    .flex-rules img:nth-child(2){
+        height: 80vh;
+    }
+
+    .prompt {
+        margin-top: 3%;
+        padding-top: 3%;
+    }
+
+    .research-responses{
+        padding: 3% 0 5% 17%;
+    }
+
+    .research-responses img:nth-child(1) {
+        width: 80%;
+    }
+
+    .research-responses img:nth-child(3) {
+        width: 60%;
+    }
+}
 /*-------------------Design Implications ---------------------*/
 .big-gray-box{
     margin-top: 3%;
@@ -543,6 +638,40 @@ ul{
     line-height: 3;
 }
 
+/*types of diary + more asump breakpoint + main feature*/
+@media only screen and (min-width: 1281px){
+    .flex-arrow2 {
+        gap: 2;
+        font-size: 180%;
+    }
+
+    .flex-arrow2 img{
+        width: 25%;
+    }
+
+    .side-note1 h4{
+        font-size: x-large;
+    }
+
+    ul{
+        font-size: 120%;
+    }
+
+    .flex-features img:nth-child(2) {
+        width: 80vh;
+        height: 60vh;
+    }
+
+    .list2 h2 {
+        font-size: xx-large;
+        padding: 5% 0 2% 30%;
+        margin: 0;
+    }
+
+    .list2 {
+        padding-left: 10%;
+    }
+}
 /*--------------- Design & Iterations ------------------*/
 
 .external-flex {
