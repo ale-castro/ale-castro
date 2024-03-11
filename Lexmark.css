@@ -438,7 +438,7 @@ h1,
 .b2 {
     position: absolute;
     top: 10vh;
-    right: 55vh;
+    right: 45vh;
 }
 
 .b3 {
@@ -453,10 +453,11 @@ h1,
     /*transform: translateX(-50%);*/
     color: white;
     font-size: 120%;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 140%;
     text-align: center;
-    padding: 5vh;
+    padding: 12%;
+
 }
 
 .b2 p,
@@ -467,9 +468,10 @@ h1,
     transform: translateX(-50%);
     color: black;
     font-size: 120%;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 140%;
     text-align: center;
+    padding-top: 9%;
 }
 
 @media only screen and (min-width: 1281px){
@@ -500,6 +502,10 @@ h1,
         line-height: 160%;     
     }
 
+    .b2 {
+        right: 55vh;
+    }
+
     .b1 p {
         padding: 8vh;
     }
@@ -511,10 +517,7 @@ h1,
     .b3 p {
     padding-top: 6%;
     }    
-    
 }
-
-
 
 /*Involvement*/
 
@@ -536,15 +539,15 @@ h1,
 
 .findings-flex {
     display: flex;
-    gap: 12vh;
-    padding-left: 20vh;
+    gap: 10vh;
+    justify-content: center;
     padding-bottom: 10vh;
 }
 
 .findings {
     border-radius: 30px;
     border: 2px solid #EE3D57;
-    height: 80vh;
+    height: 70vh;
     width: 50vh;
     margin-top: 10vh;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
@@ -576,11 +579,25 @@ h1,
 
 /*Addressing the usability issues*/
 
+.big-flex{
+    display: flex;
+    gap: 2%;
+    align-items: flex-start;
+    padding-top: 2%;
+}
+
+.gray-tiny-box2 {
+    height: 15vh;
+    width: 8vh;
+    background-color: #404041;
+    display: inline-block;
+}
+
 .p-flex {
     display: flex;
     gap: 10;
     flex-wrap: wrap;
-    padding: 4vh 20vh 5vh 10vh;
+    padding: 0 20vh 5vh 1vh;
     font-size: 120%;
     font-weight: 300;
     line-height: 140%;
@@ -607,6 +624,36 @@ h1,
     gap: 5vh;
     padding-bottom: 3vh;
 }
+
+
+@media only screen and (min-width: 1281px){
+
+    .findings {
+        height: 60vh;
+    }
+
+    .findings p {
+        font-size: 120%;    
+    }
+
+    .circle h2 {
+        font-size: xx-large;
+    }
+
+    .flex-arrow img{
+        width: 25%;
+    }
+
+    .flex-arrow {
+        font-size: 180%;
+    }
+
+    .gray-tiny-box2 {
+        width: 5vh;
+        height: 10vh;
+        margin-bottom: 4%;
+    }
+} 
 
 /*  issues and solutions*/
 
@@ -643,6 +690,7 @@ h1,
 /* solution ITEM LIBRARY gray box + image*/
 .flex-sol{
     display: flex;
+    align-items: flex-start;
 }
 
 .flex-sol ul{
@@ -651,8 +699,13 @@ h1,
     font-size: 120%;
     font-weight: 400;
     line-height: 140%;
-    height: 93vh;
+    height: 83.2vh;
+    margin: 0;
     
+}
+
+.spacio li:nth-child(1){
+    padding-top: 17%;
 }
 
 .flex-sol li{
@@ -667,6 +720,30 @@ h1,
     line-height: 140%;
     margin: 0;
 }
+
+@media only screen and (min-width: 1281px){
+    .testing1 h2 {
+        font-size: 180%;
+    }
+
+    .flex-sol ul{
+        height: 87.9vh;  
+    }
+
+    .spacio li:nth-child(1){
+        padding-top: 20%;
+    }
+
+    .flex-sol img{
+        width: 110%;
+    }
+
+    .li-solution {
+        font-size: 120%;
+        line-height: 1.4;
+    }
+
+}    
 
 /*Item library with images - FUN FACT*/
 
@@ -737,7 +814,7 @@ h1,
     margin: 0;
     
 }
-
+    
 /* Solution for issue 3 printUI*/
 
 .sol3{
@@ -755,8 +832,10 @@ h1,
     font-size: 120%;
     font-weight: 400;
     line-height: 140%;
-    height: 96vh;
-    padding: 0vh 13vh 0vh 13vh;   
+    height: 82vh;
+    padding: 4vh 9vh 0vh 13vh;
+    align-items: flex-start; 
+      
 }
 
 .note4 {
@@ -770,6 +849,35 @@ h1,
     margin: 0;   
 }
 
+.flex--sol2 img{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media only screen and (min-width: 1281px){
+
+    .printUI-issue img {
+        width: 110%;
+    }
+
+
+    .sol3{
+        font-size: xx-large;
+    }
+
+    .flex--sol2 img{
+        width: 110%;
+    }
+
+    .flex--sol2 ul{
+        padding: 8vh 15vh 0 13vh;
+        height: 72vh;      
+    }
+
+    .flex--sol2 {
+        align-items: ;
+    }
+}
 
 /*--------------------Credits---------------------------*/
 .credits{
