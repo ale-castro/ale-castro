@@ -859,15 +859,14 @@ vertical-align: middle;
     
     .modal-content {
         margin-left: 0; 
-        padding-left: 0; 
-        width: 100%; /*new*/
+        padding-left: 0;
         padding-right: 15px; /*new*/
         /*margin: 0 auto; /* Did not work --- off scrsometimes works to center*/
     }
 
     .modal-content h2 {
         margin: 0;
-        padding: 2% 0 4% 4%; /*new*/ /*decia padding-left cambie todo el padding a 0*/
+        padding: 2% 0 4% 4%; /*new*/ /*decia padding-left cambie todo el padding a 0*/    
     }
 
     .modal-content #passwordInput, 
