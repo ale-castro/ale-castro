@@ -482,6 +482,35 @@ h1 {
     padding: 0% 10% 5% 10%;
 }
 /*set of rules + salad pic, recruiting+ diary prompt+some respo+ ins breakpoint */
+
+@media only screen and (max-width: 768px){
+    .flex-rules img{
+        width: 40%;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .list1 {
+        font-size: 80%;
+        padding: 2% 2% 0 3%;
+    }
+
+    .flex-users img{
+        padding: 0;
+    }
+
+    .research-responses, 
+    .research-responses img:nth-child(3){
+       padding-left: 5%; 
+    }
+    
+    .research-responses img:nth-child(1), 
+    .research-responses img:nth-child(3){
+        width: 95%;
+    }
+   
+}
+
 @media only screen and (min-width: 1281px){
     
     .list1 li{
@@ -671,6 +700,28 @@ ul{
 }
 
 /*types of diary + more asump breakpoint + main feature*/
+@media only screen and (max-width: 768px){
+    .findings p:nth-child(2) {
+        padding: 0 4% 4% 4%;
+    }
+    
+    .persona-flex {
+        align-items: flex-end;
+    }
+
+    .persona {
+        padding-right: 3%;
+    }
+    .persona-flex img:nth-child(1) {
+        width: 80%;  
+    }
+
+    .list2 {
+        padding: 0% 5% 0 5%;
+    }
+}    
+    
+
 @media only screen and (min-width: 1281px){
     .flex-arrow2 {
         gap: 2;
@@ -848,4 +899,51 @@ ul{
     font-size: 120%;
     font-weight: 300;
     line-height: 150%;
+}
+
+@media only screen and (max-width: 768px){
+    .external-flex {
+        flex-direction: column;
+    }
+
+    .external-flex img {
+        width: 60%;
+       padding-left: 10%;
+    }
+
+    .signup-flex {
+    padding: 0 5% 8% 5%;
+    align-items: flex-start;
+    }
+
+    .onboard-flex {
+        padding: 0 3% 4% 3%;
+        gap: 0;
+    }
+
+    .parrafo p:nth-child(2) {
+        padding-right: 5%;
+    }
+
+    .onboard-flex img {
+        width: 60%;
+    }
+
+    .highfi-wel img {
+    width: 80%;
+    }
+
+    .alerts-times {
+        padding: 0 5% 8% 5%;
+        gap: 10%;  
+    }
+
+    .alerts-times img {
+        width: 80%;
+    }
+
+    .parrafo2 p:nth-child(2) {
+        line-height: 1.5;
+        padding-right: 5%;
+    }
 }
