@@ -533,7 +533,7 @@ vertical-align: middle;
       }
   
       .project-card1, .project-card2{
-          width: 99.5%;
+          width: 100%;
           text-align: center;
           padding: 0;
       }    
@@ -854,27 +854,24 @@ vertical-align: middle;
     .modal {
         left: 4px;
         width: 598px;
-        height: 550px; /*was 500 px*/
+        height: 550px; 
     }
     
     .modal-content {
         margin-left: 0; 
         padding-left: 0;
-        padding-right: 15px; /*new*/
-        /*margin: 0 auto; /* Did not work --- off scrsometimes works to center*/
     }
 
     .modal-content h2 {
         margin: 0;
-        padding: 2% 0 4% 4%; /*new*/ /*decia padding-left cambie todo el padding a 0*/    
+        padding: 2% 0 4% 4%; 
     }
 
     .modal-content #passwordInput, 
     .modal-content #submitButton, 
     .modal-content p {
         margin-left: 0;
-        padding: 0;   /*decia padding-left cambie todo el padding a 0*/
-        padding-right: 15%; /*new*/
+        padding: 0;   
     }
 
 }
