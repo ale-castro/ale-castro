@@ -9,7 +9,9 @@ body {
 .temporary-element {
     font-family: 'Courier New', Courier, monospace;
     font-size: 120%;
+    padding: 4% 4% 0 4%;
 }
+
 
 /*--------------------NAV BAR-----------------------------------*/
 .navbar {

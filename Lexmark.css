@@ -3,6 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*to delete later*/
+.temporary-element{
+    font-size: 120%;
+    padding: 4% 4% 4% 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /*NAV BAR*/
 .navbar {
     display: flex;

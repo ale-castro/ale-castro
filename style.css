@@ -7,6 +7,7 @@ body {
 /*to delete later*/
 .temporary-element{
     font-size: 120%;
+    padding: 4% 4% 0 4%;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -263,7 +264,7 @@ line-height: 1.1; /* To control spacing */
     }    
         
     .name-container{
-        right: 5vh;
+        right: 5%;
         padding-right: 0;
         text-align: auto;
     }
@@ -275,6 +276,7 @@ line-height: 1.1; /* To control spacing */
 
     .design-statement {
         top: 10%;
+        font-size: 24px;
         }
 }
 
@@ -541,7 +543,7 @@ vertical-align: middle;
 
 
 /*mobile devices landscape*/
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 996px) {
     .project-grid{
         grid-template-columns: 1fr;  
         grid-template-rows: 1fr 1fr; /*Feb. 26 from auto i put especifically 1fr 1fr*/
@@ -557,53 +559,20 @@ vertical-align: middle;
       }
 
       .grid-image{
-          width: 160%;
+          width: 150%;
       }
   
      .project-name{
-          width: 160%;
+          width: 150%;
       }
   
       .project-card1, .project-card2 {
           text-align: center;
           padding-left: 15vh;
           padding-right: 5vh;
-          width: 100vh;
+          width: 150%;
       }    
 }
-
-/*tablets portrait*/
-@media screen and (min-width:769px) and (max-width: 996px) {
-    
-    .project-grid{
-      display: flex;  
-      flex-direction: column;
-      padding-bottom: 10vh;
-    }
-
-    .project-section {    
-        height: auto;  
-    }
-
-    .grid-image{
-        width: 70vh;
-    }
-
-    .project-name{
-        width: 72vh;
-    }
-
-    .project-card1{
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .project-card2{
-        text-align: center;
-        padding-right: 0;
-    }
-}
-
 
 @media only screen and (min-width: 1281px) { 
     .project-name{
@@ -766,7 +735,7 @@ vertical-align: middle;
 
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 996px) {
     
     .photographers {
         padding-bottom: 0;
