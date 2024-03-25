@@ -55,6 +55,7 @@ a:active {
 
 /*--------------------- banner----------------------------------*/
 
+/*
 .jumbotron {
     position: relative;
     text-align: center;
@@ -79,7 +80,7 @@ a:active {
     padding-left: 7%;
     top: 15%;
     left: 10%;
-    /*transform: translate(-50%, -50%);*/
+    /*transform: translate(-50%, -50%);
 }
 
 .line1 {
@@ -127,6 +128,15 @@ a:active {
 }
 
 }
+
+*/
+
+.diary-banner {
+    max-width: 100%;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+}
+
 
 /* ------------ End of Diary banner------------------*/
 
@@ -251,6 +261,12 @@ h1 {
     margin-right: 4%;
 
 }
+
+@media only screen and (max-width: 996px){
+    .prompt-img{
+        width: 80%;
+    }
+}    
 
 /* ---------------------- round box (note) ----------------------- */
 
@@ -947,5 +963,18 @@ ul{
     .parrafo2 p:nth-child(2) {
         line-height: 1.5;
         padding-right: 5%;
+    }
+}
+
+
+
+@media only screen and (max-width: 996px){
+    .footer {
+        height: 20vh;
+    }
+
+    .foot_navbar {
+        padding-left: 10vh;
+        padding-right: 10vh;
     }
 }
