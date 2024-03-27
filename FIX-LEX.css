@@ -51,80 +51,6 @@ a:active {
         }       
 }
 
-/*Lexmark banner*/
-
-/*
-.jumbotron {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.lexmark-banner {
-    height: 85vh;
-    display: block;
-    width: 100%;
-}
-
-.jumbotron p {
-    color: #FFF;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 800%;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    position: absolute;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.line1 {
-    margin-top: 10px;
-    border-top: 2px solid white;
-    width: 42%;
-    text-align: center;
-    padding-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.line2 {
-    margin-top: 10px;
-    border-top: 2px solid white;
-    width: 42%;
-    text-align: center;
-    padding-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media only screen and (max-width: 768px){
-    .jumbotron p {
-        top: 15%;    
-    }    
-}
-
-@media only screen and (min-width: 1281px){
-
-    .jumbotron p {
-        font-size: 1200%;
-    }
-}    
-
-*/
-
 .lexmark-banner {
     max-width: 100%;
     padding-bottom: 0%;
@@ -182,19 +108,23 @@ a:active {
     margin-bottom: 0;
 }
 
+/*universal*/
+
+.normal {
+    font-size: 120%;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+
 
 /*What's PPR explanation*/
 .ppr-description {
-    padding-top: 8vh;
+    display: flex;
     margin: 0;
-    padding-left: 43vh;
-    padding-right: 43vh;
-    padding-bottom: 11vh;
-    line-height: 140%;
-    font-weight: 300;
-    display: inline-block;
+    justify-content: center;
     text-align: center;
-    font-size: 120%;
+    padding: 5% 12% 5% 12%;   
 }
 
 /*contributions done by team members grid*/
@@ -362,38 +292,28 @@ h1,
 /*---persona grid----*/
 
 .persona-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 5vh;
-    margin: 0;
-    height: 90vh;
-    width: 100vh;
-    padding-left: 20vh;
-    margin-bottom: 10vh;
+    display: flex;
+    column-gap: 5%;
+    justify-content: center;
+    margin: 0 0 7% 0;
 }
 
 .persona-box {
     border: 3px solid #DADADA;
-    width: 55vh;
 }
 
 .persona-pic {
-    width: 55vh;
+    width: 100%;
 }
 
 #persona.persona-name {
-    width: 50vh;
-    padding-left: 2.5vh;
-    padding-right: 2.5vh;
-    padding-bottom: 2.5vh;
+    padding: 0 2% 2% 2%;
 }
 
 
 .persona {
-    width: 50vh;
-    padding-left: 2.5vh;
-    padding-right: 2.5vh;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-bottom: 2.5vh;
     font-weight: 300;
     font-size: 100%;
@@ -408,7 +328,7 @@ h1,
     line-height: 120%;
     /*smaller font size -thin*/
     padding-bottom: 3vh;
-
+    padding-right: 3%;
 }
 
 .persona-name {
@@ -453,80 +373,74 @@ h1,
 /* BUBBLES section Design space */
 
 .bubbles {
-    position: relative;
-    margin-bottom: 10vh;
-}
-
-.b1,
-.b2,
-.b3 {
-    display: inline-block;
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    padding: 6% 0;
 }
 
 .b1 {
+    display: flex;
     clip-path: circle(50% at 50% 50%);
     background-color: #E25E5E;
     box-shadow: 0 0 10px #404041;
     height: 80vh;
     width: 80vh;
-    position: relative;
-    margin: 10vh 5vh 10vh 15vh;
+    
+    margin-top: 5%;
 }
 
 .b2 {
+    display: flex;
     clip-path: circle(50% at 50% 50%);
     background-color: #E9A6A6;
     box-shadow: 0 0 10px #404041;
-    height: 50vh;
-    width: 50vh;
-    display: inline-block;
+    height: 55vh;
+    width: 55vh;
+    
 }
 
 .b3 {
+    display: flex;
     clip-path: circle(50% at 50% 50%);
     background-color: #E9A6A6;
-    box-shadow: 0 0 10px #404041;
-    height: 40vh;
-    width: 40vh;
-    display: inline-block;
-}
-
-.b2 {
-    position: absolute;
-    top: 10vh;
-    right: 45vh;
-}
-
-.b3 {
-    position: absolute;
-    bottom: 0vh;
-    right: 20vh;
+    box-shadow: 1px 1px 10px #404041;
+    height: 45vh;
+    width: 45vh;
+    margin-top: 20%;
 }
 
 .b1 p {
-    position: absolute;
-    top: 22%;
-    /*transform: translateX(-50%);*/
     color: white;
-    font-size: 120%;
+    font-size: 150%;
     font-weight: 500;
     line-height: 140%;
     text-align: center;
-    padding: 12%;
+    padding: 20% 10% 0 10%;
 }
 
-.b2 p,
-.b3 p {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
+.b2 p {
     color: black;
-    font-size: 120%;
+    font-size: 140%;
     font-weight: 500;
     line-height: 140%;
     text-align: center;
-    padding-top: 9%;
+    padding: 15% 10% 0 10%;
+}
+
+.b3 p {
+    color: black;
+    font-size: 140%;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    padding: 18% 10% 0 10%;
+}
+
+@media only screen and (max-width: 576px){
+    .bubbles {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -538,39 +452,23 @@ h1,
     .side-note1 {
         margin-top: 30vh;
     }    
-    
-    .persona-grid {
-        column-gap: 4vh;
-        padding-left: 0;
-        margin-bottom: 3vh;
-    }
-
-    .b2 {
-        top: 8vh;
-        right: 25vh;
-    }
-
-    .b1 p {
-        padding: 3% 5%;
-    }
-
-    .b2 p,
-    .b3 p {
-    top: 3%;
-    font-size: 100%;
-    padding-top: 0;
-}
 
 }
 
 @media only screen and (max-width: 996px){
-    .persona-grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            row-gap: 5%;
-            margin-bottom: 10vh;
-            width: auto;
-            height: auto;
+    .b1 {
+        height: 50vh;
+        width: 50vh;
+    }
+    
+    .b2 {
+        height: 30vh;
+        width: 30vh;   
+    }
+    
+    .b3 {
+        height: 28vh;
+        width: 28vh;
     }
     
 }    
@@ -590,7 +488,7 @@ h1,
     }
 
     .b1 p, .b2 p, .b3 p {
-        font-size: 165%;
+        font-size: 200%;
         font-weight: 500;
     }
 
@@ -601,23 +499,7 @@ h1,
     #note {
         font-size: 120%;
         line-height: 160%;     
-    }
-
-    .b2 {
-        right: 55vh;
-    }
-
-    .b1 p {
-        padding: 8vh;
-    }
-
-    .b2 p {
-    padding-top: 4%;
-    }
-
-    .b3 p {
-    padding-top: 6%;
-    }    
+    }  
 }
 
 /*Involvement*/
@@ -640,18 +522,19 @@ h1,
 
 .findings-flex {
     display: flex;
-    gap: 10vh;
+    gap: 5%;
     justify-content: center;
-    padding-bottom: 10vh;
+    margin: 0 10% 8% 10%;
+    
 }
 
 .findings {
     border-radius: 30px;
     border: 2px solid #EE3D57;
-    height: 70vh;
-    width: 50vh;
     margin-top: 10vh;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    flex-grow: 1;
+    width: 30%;
     position: relative;
 }
 
