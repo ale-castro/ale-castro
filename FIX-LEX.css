@@ -433,7 +433,7 @@ h1,
     box-shadow: 0 0 10px #404041;
     height: 55vh;
     width: 55vh;
-  /*el unico breakpoint que molesta las bolas es el de 996
+  /*el unico breakpoint que molesta las bolas es el de 996 y el de 576
   el de 776 se ve bien bolas solo column para 996? corregir. MiRAR
   BIEN QUE ESTA PASANDO CON ESE BREAKPOINT */ 
 }
@@ -500,19 +500,19 @@ h1,
 @media only screen and (min-width:769) and (max-width: 996px){
 
     .b1 {
-        height: 35vh;
-        width: 35vh;
+        height: 400px;
+        width: 400px;
     }
     
     .b2 {
-        height: 28vh;
-        width: 28vh;
+        height: 250px;
+        width: 250px;
         justify-content: center;   
     }
     
     .b3 {
-        height: 25vh;
-        width: 25vh;
+        height: 250px;
+        width: 250px;
     }
     
 }    
@@ -928,7 +928,7 @@ h1,
     padding-top: 0;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 996px){
     .printUI-issue{
        flex-direction: column;
     }
