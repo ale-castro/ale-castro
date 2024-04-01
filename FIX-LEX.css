@@ -675,8 +675,8 @@ h1,
     }
 
     .findings {
-        flex-grow: none;
-        width: auto;
+        flex-grow: 0;
+        width: 90%;
     }
   
 }
