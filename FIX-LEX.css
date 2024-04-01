@@ -675,6 +675,11 @@ h1,
     .findings p {
         padding: 5%;
     }
+
+    .findings {
+        flex-grow: none;
+        width: auto;
+    }
   
 }
 
