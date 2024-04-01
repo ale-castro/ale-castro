@@ -87,12 +87,18 @@ a:active {
     color: #FFF;
     margin: 0;
     padding: 0;
+    font-size: 180%;
+}
+
+.warning-icon{
+    padding-top: 2%;
 }
 
 .no-copy-statement { /*same as b2 this could be a universal parameter*/
     font-size: 150%;
     font-weight: 500;
     line-height: 140%;
+    padding: 0 5% 5% 5%;
 }
 
 
@@ -208,15 +214,13 @@ h1,
 }
 
 .Terminology {
-    margin: 0;
-    padding-top: 4vh;
+    display: flex;
     text-align: left;
-    padding-left: 30vh;
     font-weight: 300;
     font-size: 120%;
     line-height: 140%;
-    padding-bottom: 10vh;
-
+    justify-content: center;
+    padding: 3% 0;
 }
 
 @media only screen and (max-width: 768px){
@@ -237,11 +241,7 @@ h1,
     .contribution-grid {
         padding-left: 10vh;
     }
-
-    .Terminology {
-        padding-left: 15vh;
-    }    
-    
+      
 }
 
 @media only screen and (max-width: 996px){
@@ -276,10 +276,6 @@ h1,
         font-size: 300%; 
     }
     
-    .Terminology {
-        padding-top: 8vh;
-        padding-left: 50vh;
-    }
 } 
 
 /****Understanding users section -gray box*****/
@@ -298,7 +294,9 @@ h1,
 }
 
 .understanding {
-    padding: 2vh 27vh 0 27vh;
+    display: flex;
+    justify-content: center;
+    padding: 2% 15%;
     font-weight: 300;
     /*Predominant font size -thin*/
     font-size: 120%;
@@ -422,7 +420,9 @@ h1,
     box-shadow: 0 0 10px #404041;
     height: 55vh;
     width: 55vh;
-    
+  /*el unico breakpoint que molesta las bolas es el de 996
+  el de 776 se ve bien bolas solo column para 996? corregir. MiRAR
+  BIEN QUE ESTA PASANDO CON ESE BREAKPOINT */ 
 }
 
 .b3 {
@@ -464,8 +464,10 @@ h1,
 }
 
 @media only screen and (max-width: 576px){
-    .bubbles {
+    .persona-grid {
         flex-direction: column;
+        column-gap: 0;
+        row-gap: 5%;
     }
 }
 
@@ -481,25 +483,23 @@ h1,
 
 }
 
-@media only screen and (max-width: 996px){
-    .bubbles {
-        flex-direction: column;
-    }
+/*targeting only the 996 breakpoint*/
+@media only screen and (min-width:769) and (max-width: 996px){
 
     .b1 {
-        height: 50vh;
-        width: 50vh;
+        height: 38vh;
+        width: 38vh;
     }
     
     .b2 {
-        height: 30vh;
-        width: 30vh;
+        height: 28vh;
+        width: 28vh;
         justify-content: center;   
     }
     
     .b3 {
-        height: 28vh;
-        width: 28vh;
+        height: 25vh;
+        width: 25vh;
     }
     
 }    
