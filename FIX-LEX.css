@@ -421,8 +421,7 @@ h1,
     background-color: #E25E5E;
     box-shadow: 0 0 10px #404041;
     height: 80vh;
-    width: 80vh;
-    
+    width: 80vh;  
     margin-top: 5%;
 }
 
@@ -502,12 +501,11 @@ h1,
     .b1 {
         height: 400px;
         width: 400px;
-    }
+    } 
     
     .b2 {
         height: 250px;
-        width: 250px;
-        justify-content: center;   
+        width: 250px;   
     }
     
     .b3 {
