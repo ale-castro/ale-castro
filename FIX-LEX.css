@@ -767,13 +767,20 @@ h1,
     padding-bottom: 7%;
     }
 
-    .flex-sol{
+    /*.flex-sol{
         flex-direction: column-reverse;
-    }
+    }*/
 
     .spacio li:nth-child(1){
         padding-top: 7%;
     } 
+}   
+
+
+@media only screen and (max-width: 996px){
+    .flex-sol{
+        flex-direction: column-reverse;
+    }
 }    
 
 @media only screen and (min-width: 1281px){
