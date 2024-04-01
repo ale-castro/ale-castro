@@ -102,45 +102,6 @@ a:active {
 }
 
 
-/* 
-.red-container {
-    border-radius: 40px;
-    height: 30vh;
-    background-color: #EE3D57;
-    width: 85%;
-    margin: 6% 6.5% 1% 6.5%;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    padding-left: 7vh;
-}
-
-
-.warning {
-    font-size: x-large;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 13%;
-    left: 48%;
-}
-
-.no-copy-statement {
-    position: absolute;
-    margin-top: 11vh;
-    padding: 0;
-    margin-right: 12vh;
-    margin-left: 5vh;
-    font-weight: 500;
-    font-size: large;
-    line-height: 1.2;
-    margin-bottom: 0;
-}
-
-*/
-
-/*universal*/
-
 .normal {
     font-size: 120%;
     line-height: 140%;
@@ -155,7 +116,7 @@ a:active {
     margin: 0;
     justify-content: center;
     text-align: center;
-    padding: 5% 12% 5% 12%;   
+    padding: 5% 12%;   
 }
 
 /*contributions done by team members grid*/
@@ -242,22 +203,26 @@ h1,
         margin-left: 4vh;   
     }
 
+    /*
     .ppr-description {
         padding-left: 20vh;
         padding-right: 20vh;
     }
 
-    /*.contribution-grid {
+    .contribution-grid {
         padding-left: 10vh;
     }*/
       
 }
 
 @media only screen and (max-width: 996px){
+    
+    /*
     .ppr-description{
         margin-left: 15vh;
         margin-right: 15vh;
     }
+    */
 
     .contribution-grid {
         padding-left: 10vh;
@@ -496,21 +461,26 @@ h1,
 }
 
 /*targeting only the 996 breakpoint*/
-@media only screen and (min-width:769) and (max-width: 996px){
+@media only screen and (min-width:576px) and (min-width:769px) and (max-width: 996px){
+
+    .bubbles {
+        flex-direction: column;
+    }
 
     .b1 {
-        height: 400px;
-        width: 400px;
+    height: 40vh;
+    width: 40vh; 
     } 
     
     .b2 {
-        height: 250px;
-        width: 250px;   
+    height: 30vh;
+    width: 30vh;
+    margin-left: 40%;
     }
     
     .b3 {
-        height: 250px;
-        width: 250px;
+    height: 28vh;
+    width: 28vh;   
     }
     
 }    
@@ -573,7 +543,6 @@ h1,
     border: 2px solid #EE3D57;
     margin-top: 10vh;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    flex-grow: 1;
     width: 30%;
     position: relative;
 }
@@ -583,7 +552,7 @@ h1,
     font-size: 100%;
     font-weight: 400;
     line-height: 170%;
-}
+} 
 
 .circle {
     clip-path: circle(50% at 50% 50%);
@@ -675,7 +644,6 @@ h1,
     }
 
     .findings {
-        flex-grow: 0;
         width: 90%;
     }
   
@@ -736,7 +704,9 @@ h1,
 }
 
 .task2 {
-    padding: 3vh 15vh 10vh 19vh;
+    display: flex;
+    justify-content: center;
+    padding: 5% 10%;
     font-size: 120%;
     font-weight: 300;
     line-height: 140%; 
