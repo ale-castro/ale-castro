@@ -567,7 +567,7 @@ h1,
     border: 2px solid #EE3D57;
     margin-top: 10vh;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    flex-grow: 1;
+    width: 30%;
     position: relative;
 }
 
@@ -652,19 +652,27 @@ h1,
         gap: 5vh;
     }
 
+    .findings {
+        width: 90%;
+    }
+
     .findings p {
         padding: 2% 6%;
     }
 }
 
-@media only screen and (min-width: 996px) {
+@media only screen and (max-width: 996px) {
     
     .findings-flex {
         flex-direction: column;
     }
 
+    .findings {
+        width: 90%;
+    }
+
     .findings-flex {
-        margin: 0 5% 8% 5%;
+        margin: 3% 5%;
     }
 
     .findings p {
@@ -771,17 +779,10 @@ h1,
 }
 
 @media only screen and (max-width: 768px){
+
     .flex-sol ul{
     height: 100%;
     padding-bottom: 7%;
-    }
-
-    /*.flex-sol{
-        flex-direction: column-reverse;
-    }*/
-
-    .spacio li:nth-child(1){
-        padding-top: 7%;
     } 
 }   
 
@@ -789,12 +790,16 @@ h1,
 @media only screen and (max-width: 996px){
     .flex-sol{
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .flex-sol ul{
         height: 40vh;     
     }
 
+    .spacio li:nth-child(1){
+        padding-top: 7%;
+    }
 }    
 
 @media only screen and (min-width: 1281px){
@@ -931,15 +936,23 @@ h1,
 }
 
 @media only screen and (max-width: 996px){
+    
+    .circle2 {
+        width: 18vh;
+        height: 18vh;
+    }
+    
     .printUI-issue{
        flex-direction: column;
+       padding-right: 0;
+       align-items: center;
     }
 
     .flex--sol2 {
         flex-direction: column;
     }
 
-    flex--sol2 ul{
+    .flex--sol2 ul{
         height: 40vh;          
     }
 }    
