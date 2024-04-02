@@ -461,7 +461,7 @@ h1,
 }
 
 /*targeting only the 996 breakpoint*/
-@media only screen and (min-width:576px) and (min-width:769px) and (max-width: 996px){
+@media only screen and (max-width:576px) {
 
     .bubbles {
         flex-direction: column;
@@ -475,7 +475,31 @@ h1,
     .b2 {
     height: 30vh;
     width: 30vh;
-    margin-left: 40%;
+    margin-left: 30%;
+    }
+    
+    .b3 {
+    height: 30vh;
+    width: 30vh;   
+    }
+    
+}
+
+@media only screen and (min-width:769px) and (max-width: 996px){
+
+    .bubbles {
+        flex-direction: column;
+    }
+
+    .b1 {
+    height: 40vh;
+    width: 40vh; 
+    } 
+    
+    .b2 {
+    height: 30vh;
+    width: 30vh;
+    margin-left: 35%;
     }
     
     .b3 {
@@ -483,7 +507,7 @@ h1,
     width: 28vh;   
     }
     
-}    
+} 
 
 @media only screen and (min-width: 1281px){
 
@@ -543,7 +567,7 @@ h1,
     border: 2px solid #EE3D57;
     margin-top: 10vh;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-    width: 30%;
+    flex-grow: 1;
     position: relative;
 }
 
@@ -641,10 +665,6 @@ h1,
 
     .findings p {
         padding: 5%;
-    }
-
-    .findings {
-        width: 90%;
     }
   
 }
@@ -766,6 +786,11 @@ h1,
     .flex-sol{
         flex-direction: column-reverse;
     }
+
+    .flex-sol ul{
+        height: 40vh;     
+    }
+
 }    
 
 @media only screen and (min-width: 1281px){
@@ -909,6 +934,10 @@ h1,
     .flex--sol2 {
         flex-direction: column;
     }
+
+    flex--sol2 ul{
+        height: 40vh;          
+    }
 }    
 
 @media only screen and (min-width: 1281px){
@@ -934,6 +963,7 @@ h1,
     .flex--sol2 {
         align-items: ;
     }
+
 }
 
 /*--------------------Credits---------------------------*/
@@ -979,4 +1009,10 @@ h1,
     font-size: 120%;
     font-weight: 300;
     line-height: 150%;
+}
+
+@media only screen and (max-width: 996px){
+    .footer {
+        height: 20vh;
+    }
 }
