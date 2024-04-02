@@ -660,6 +660,10 @@ h1,
 @media only screen and (min-width: 996px) {
     
     .findings-flex {
+        flex-direction: column;
+    }
+
+    .findings-flex {
         margin: 0 5% 8% 5%;
     }
 
