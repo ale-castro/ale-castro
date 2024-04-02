@@ -188,8 +188,17 @@ h1,
     .contribution-grid{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        padding: 0 5%
+        padding: 0 5%;
     }
+
+    h2 {
+        text-align: center;
+    }
+
+    .flex-warning {
+    padding-top: 0%;
+}
+
 }
 
 
@@ -202,27 +211,10 @@ h1,
         margin-top: 13vh;
         margin-left: 4vh;   
     }
-
-    /*
-    .ppr-description {
-        padding-left: 20vh;
-        padding-right: 20vh;
-    }
-
-    .contribution-grid {
-        padding-left: 10vh;
-    }*/
-      
+ 
 }
 
 @media only screen and (max-width: 996px){
-    
-    /*
-    .ppr-description{
-        margin-left: 15vh;
-        margin-right: 15vh;
-    }
-    */
 
     .contribution-grid {
         padding-left: 10vh;
@@ -440,13 +432,6 @@ h1,
     padding: 18% 10% 0 10%;
 }
 
-@media only screen and (max-width: 576px){
-    .persona-grid {
-        flex-direction: column;
-        column-gap: 0;
-        row-gap: 5%;
-    }
-}
 
 @media only screen and (max-width: 768px){
     
@@ -460,8 +445,14 @@ h1,
 
 }
 
-/*targeting only the 996 breakpoint*/
 @media only screen and (max-width:576px) {
+    
+    .persona-grid {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 5%;
+        margin: 0 0 2% 0;
+    }
 
     .bubbles {
         flex-direction: column;
@@ -482,9 +473,20 @@ h1,
     height: 30vh;
     width: 30vh;   
     }
+
+    .b1 p {
+    font-size: 135%;
+    padding: 10% 10% 0 10%;
+    }
+
+    .b2 p {
+    font-size: 135%;
+    padding: 9% 10% 0 10%;
+    }
     
 }
 
+/*targeting only the 996 breakpoint*/
 @media only screen and (min-width:769px) and (max-width: 996px){
 
     .bubbles {
