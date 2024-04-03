@@ -217,7 +217,7 @@ h1,
 @media only screen and (max-width: 996px){
 
     .contribution-grid {
-        padding-left: 10vh;
+        padding-left: 5vh;
     }
 }    
 
@@ -509,6 +509,18 @@ h1,
     width: 28vh;   
     }
     
+
+    .b1 p {
+        padding: 23% 10% 0 10%;
+    }
+
+    .b2 p {
+        padding: 18% 10% 0 10%;
+    }
+
+    .b3 p {
+        padding: 21% 10% 0 10%;
+        }
 } 
 
 @media only screen and (min-width: 1281px){
@@ -614,8 +626,6 @@ h1,
 
 .p-flex {
     display: flex;
-    gap: 10;
-    flex-wrap: wrap;
     padding: 0 20vh 5vh 1vh;
     font-size: 120%;
     font-weight: 300;
@@ -667,6 +677,8 @@ h1,
     
     .findings-flex {
         flex-direction: column;
+        margin: 0 10% 10% 10%;
+        padding-bottom: 2%;
     }
 
     .findings {
@@ -680,7 +692,28 @@ h1,
     .findings p {
         padding: 5%;
     }
+
+    .p-flex {
+        padding: 0 10vh 5vh 1vh;
+    }
+}
   
+    @media only screen and (min-width:769px) and (max-width: 996px) {
+
+    .circle {
+        width: 8vh;
+        height: 8vh;
+    }
+
+    .circle h2 {
+        font-size: 130%;
+    }
+
+    .gray-tiny-box2 {
+        height: 10vh;
+        width: 8vh;
+    }
+    
 }
 
 @media only screen and (min-width: 1281px){
@@ -796,7 +829,7 @@ h1,
     }
 
     .flex-sol ul{
-        height: 40vh;     
+        height: 36vh;     
     }
 
     .spacio li:nth-child(1){
@@ -893,7 +926,7 @@ h1,
 }
 
 .printUI-issue ul{
-    padding-left: 0 15vh 0 15vh ;
+    padding-left: 0 15vh 0 15vh;
     margin: 0;
     
 }
@@ -940,8 +973,10 @@ h1,
 @media only screen and (max-width: 996px){
     
     .circle2 {
-        width: 18vh;
-        height: 18vh;
+        width: 15vh;
+        height: 15vh;
+        right: -15vh;
+        top: -10vh;
     }
     
     .printUI-issue{
@@ -955,7 +990,13 @@ h1,
     }
 
     .flex--sol2 ul{
-        height: 40vh;          
+        height: 40vh;
+        padding: 4vh 9vh 0vh 12vh;          
+    }
+
+    .sol3 {
+        margin: 0;
+        padding-bottom: 5%;
     }
 }    
 
@@ -1034,4 +1075,9 @@ h1,
     .footer {
         height: 20vh;
     }
+
+    .foot_navbar {
+        padding: 0 10vh;
+    }
+
 }
