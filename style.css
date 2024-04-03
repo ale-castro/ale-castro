@@ -264,7 +264,7 @@ line-height: 1.1; /* To control spacing */
     }    
         
     .name-container{
-        right: 5%;
+        right: 0%;
         padding-right: 0;
         text-align: auto;
     }
@@ -276,7 +276,7 @@ line-height: 1.1; /* To control spacing */
 
     .design-statement {
         top: 10%;
-        font-size: 24px;
+        font-size: 22px;
         }
 }
 
@@ -559,18 +559,18 @@ vertical-align: middle;
       }
 
       .grid-image{
-          width: 150%;
+          width: 100%;
       }
   
      .project-name{
-          width: 150%;
+          width: 100%;
       }
   
       .project-card1, .project-card2 {
           text-align: center;
           padding-left: 15vh;
           padding-right: 5vh;
-          width: 150%;
+          width: 100%;
       }    
 }
 
