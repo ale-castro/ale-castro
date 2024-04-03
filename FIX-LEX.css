@@ -134,8 +134,7 @@ a:active {
 .team-roles {
     display: flex;
     flex-direction: column;
-    gap: 0px;
-
+    gap: 0px;    
 }
 
 h2 {
@@ -191,12 +190,18 @@ h1,
         padding: 0 5%;
     }
 
+    .team,
+    .contributions,
+    .team-roles {
+        justify-content: center;   
+    }
+
     h2 {
         text-align: center;
     }
 
     .flex-warning {
-    padding-top: 0%;
+    padding-top: 1%;
 }
 
 }
@@ -208,8 +213,8 @@ h1,
     }
     
     .no-copy-statement {
-        margin-top: 13vh;
-        margin-left: 4vh;   
+        margin-top: 7vh;
+        margin-left: 2vh;   
     }
  
 }
@@ -441,7 +446,15 @@ h1,
 
     .side-note1 {
         margin-top: 30vh;
-    }    
+    }
+    .persona-grid {
+        margin: 0 0 3% 0;
+    }
+
+    .b1 p, .b2 p, .b3 p {
+        font-size: 120%;
+    }
+        
 
 }
 
@@ -475,13 +488,15 @@ h1,
     }
 
     .b1 p {
-    font-size: 135%;
-    padding: 10% 10% 0 10%;
+        padding: 10% 10% 0 10%;
+        }
+    
+    .b2 p {
+        padding: 9% 10% 0 10%;
     }
 
-    .b2 p {
-    font-size: 135%;
-    padding: 9% 10% 0 10%;
+    .b3 p {
+        padding: 14% 10% 0 10%;
     }
     
 }
@@ -654,6 +669,13 @@ h1,
     padding-bottom: 3vh;
 }
 
+
+@media only screen and (max-width: 576px) {
+    .flex-arrow img {
+        width: 50%;
+    }
+
+}    
 @media only screen and (max-width: 768px){
 
     .findings-flex {
@@ -820,6 +842,14 @@ h1,
     margin: 0;
 }
 
+
+
+@media only screen and (max-width: 576px){
+    .sol1{
+        width: 60%;
+    }
+}
+
 @media only screen and (max-width: 768px){
 
     .flex-sol ul{
@@ -978,8 +1008,8 @@ h1,
     .circle2 {
         width: 15vh;
         height: 15vh;
-        right: -9vh;
-        top: -5vh;
+        right: -6vh;
+        top: -4vh;
     }
     
     .printUI-issue{
