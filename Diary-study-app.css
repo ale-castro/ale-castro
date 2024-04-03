@@ -262,6 +262,16 @@ h1 {
 
 }
 
+@media only screen and (max-width: 576px){
+    .padding1{
+        padding: 8vh;
+    }
+
+    .prompt-img {
+        width: 100%;
+    }
+}    
+
 @media only screen and (max-width: 996px){
     .prompt-img{
         width: 80%;
@@ -379,6 +389,32 @@ h1 {
     padding: 6%;
     background-color: #404041;
 }
+
+
+@media only screen and (max-width: 576px){
+    .flex-arrow img {
+        width: 50%;
+    }
+
+    .padding3 {
+        padding: 0 8vh 10vh 8vh;    
+    }
+
+    .flex-prompt{
+        row-gap: 0%;
+        flex-direction: column;
+    }
+    
+    .flex-prompt img {
+        padding: 0;
+        margin: 0;
+        width: 80%;
+    }
+
+    .padding4{
+        margin: 0;
+    }
+} 
 
 @media only screen and (max-width: 768px){
     .flex-arrow {
@@ -500,6 +536,21 @@ h1 {
     padding: 0% 10% 5% 10%;
 }
 /*set of rules + salad pic, recruiting+ diary prompt+some respo+ ins breakpoint */
+
+
+@media only screen and (max-width: 576px){
+    .flex-rules {
+        flex-direction: column;
+    }
+
+    .flex-users {
+        flex-direction: column;
+    }
+
+    .flex-two-col{
+    flex-direction: column;
+    }
+}    
 
 @media only screen and (max-width: 768px){
     .flex-rules img{
@@ -717,6 +768,25 @@ ul{
     line-height: 3;
 }
 
+
+@media only screen and (max-width: 576px){
+    .flex-arrow2 img {
+        width: 50%;
+    }
+
+    .findings-flex {
+      flex-direction: column;
+    }
+
+    .persona-flex{
+        flex-direction: column-reverse;
+    }
+
+    .flex-features{
+        flex-direction: column;
+    }
+}    
+
 /*types of diary + more asump breakpoint + main feature*/
 @media only screen and (max-width: 768px){
     .findings p:nth-child(2) {
@@ -917,6 +987,24 @@ ul{
     font-size: 120%;
     font-weight: 300;
     line-height: 150%;
+}
+
+@media only screen and (max-width: 576px){
+    .signup-flex {
+        flex-direction: column-reverse;
+    }
+
+    .onboard-flex {
+        flex-direction: column;
+    }
+
+    .alerts-times {
+        flex-direction: column;
+    }
+
+    .center2 img {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 768px){

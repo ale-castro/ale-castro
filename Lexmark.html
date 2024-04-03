@@ -24,32 +24,25 @@
             <a href="Images/resume-ccastro2024.pdf">Resume</a>
         </div>
 
-       <!--
-        <div class="jumbotron">
-            <img class="lexmark-banner" src="Images/lexmark-banner.png" alt="picture of a produce isle in a grocery store">
-            <div class="line1"></div>
-            <p>Lexmark</p>
-            <div class="line2"></div>   
-        </div>
-       --> 
-        
        <div class="jumbotron">
         <img class="lexmark-banner" src="Images/lexmark-banner.svg" alt="picture of a produce isle in a grocery store">  
         </div>
 
         <div class="warning-box">
             <div class="red-container">
-                <img class="warning-icon" src="Images/warning-sign.svg" alt="warning icon - an exclamation mark inside of a triangle">
-                <p class="warning">ATTENTION</p>    
+                <div class="flex-warning">
+                    <img class="warning-icon" src="Images/warning-sign.svg" alt="warning icon - an exclamation mark inside of a triangle">
+                    <p class="warning">ATTENTION</p> 
+                </div>    
                 <p class="no-copy-statement">The following information cannot be reproduced in any way, and it is intended only to showcase my past work for interviewing purposes.</p>
             </div>
         </div>
 
-    
-        <p class="ppr-description">Publishing Platform for Retail (PPR) is a SaaS 
+    <div class="ppr-description">
+        <p class="normal">Publishing Platform for Retail (PPR) is a SaaS 
             solution to help retail stores to manage the printing of price tags 
             for their products or send information to price LED panels (like the ones used at Kohl’s or JCPenney).</p>
-        
+    </div>    
 
         <div class="contribution-grid">
             <div class="team">
@@ -90,19 +83,23 @@
         
         <h1>Terminology</h1>
         <div class="line3"></div>
-        <ul class="Terminology">    
-            <li>Through out the entire document I would use the words: 
-        labels, price tags, signs interchangeably. </li>
-            <li>Batch is a group of signs.</li>
-            <li>Item and product are also used interchangeably.</li>
-        
-        </ul>
-
+        <div class="Terminology">
+            <ul>    
+                <li>Through out the entire document I would use the words: 
+            labels, price tags, signs interchangeably. </li>
+                <li>Batch is a group of signs.</li>
+                <li>Item and product are also used interchangeably.</li>
+            
+            </ul>
+        </div>
 
         <h1>Understanding Users</h1>
         <div class="line3"></div>
-        <p class="understanding">I developed the following personas based on a Contextual 
-            inquiry done with one of our costumers, and the information gathered from marketing.  </p>    
+        <div class="understanding">
+            <p>I developed the following personas based on a Contextual 
+                inquiry done with one of our costumers, and the information gathered from marketing.
+            </p>
+        </div>    
         <div class="users-container">
         <p>PPR has two in-stores solutions: one made to print out labels/price signs in bulks 
             mainly for store managers, sometimes by retail associates (web-app solution) and 
@@ -168,11 +165,14 @@
         
         <h1>My Involvement</h1>
         <div class="line3"></div>
-        <p class="Involvement">For this particular project we user tested another’s designer work with both real customers (remotely) and paid participants
-             with relevant experience. We recruited participants through an agency and brought them to Lexmark’s usability lab. My job was to provide the participant screener guidliness for the agency, design the user testing protocol, help running the usability testing, and address issues found
-              during the usability testing. PPR is a revamp of AccessVia, which was acquired by Lexmark. During my time at Lexmark, 
-              PPR was the most profitable software in the company’s portfolio services.
-        </p>
+
+        <div class="Involvement">
+            <p>For this particular project we user tested another’s designer work with both real customers (remotely) and paid participants
+                with relevant experience. We recruited participants through an agency and brought them to Lexmark’s usability lab. My job was to provide the participant screener guidliness for the agency, design the user testing protocol, help running the usability testing, and address issues found
+                during the usability testing. PPR is a revamp of AccessVia, which was acquired by Lexmark. During my time at Lexmark, 
+                PPR was the most profitable software in the company’s portfolio services.
+            </p>
+        </div>
 
         <h1>User Testing Findings</h1>
         <div class="line3"></div>
@@ -235,14 +235,16 @@
             <img class="img-testing1" src="Images/issue-image1.svg" alt="picture of a PPR interface: homepage to item library">
             <h2>Solutions for Issues # 1 and 2</h2>
             <img class="sol1" src="Images/solution-4-1and2.svg" alt="picture of a modal">
-            <p class="task2">Participants did not click on the “view” button.  Banner was ignored by them.  
-            “View” button would have taken users to the batch list. 
-            Instead, they went back and took other routes. When they finally landed on 
-            the batch list they thought they were in the creating batches workflow, the
-             main reason is because the two pages were similar.
-            All this, added to a potential customer request that the items of 
-            the item library (library of products) would have images let to the 
-            following design: </p>
+            <div class="task2">
+                <p>Participants did not click on the “view” button.  Banner was ignored by them.  
+                “View” button would have taken users to the batch list. 
+                Instead, they went back and took other routes. When they finally landed on 
+                the batch list they thought they were in the creating batches workflow, the
+                main reason is because the two pages were similar.
+                All this, added to a potential customer request that the items of 
+                the item library (library of products) would have images let to the 
+                following design: </p>
+            </div>
         </div>
 
 
@@ -259,7 +261,7 @@
             <img src="Images/item_library.svg" alt="picture of the item library"> 
         </div>
     
-        <p class="center">This solution for the most part had positive feedback after testing. This solution is the final after a few modifications done after the second test.</p>   
+        <p class="center">This solution for the most part had positive feedback after testing. This is the final design after a few modifications done after the second test.</p>   
         <br>
         <br>
 
@@ -269,7 +271,7 @@
             <p>Library with product/item pictures </p>
             <div class="item-positioning">
                 <img class="item-library-with-pics" src="Images/item_library_with_images.svg" alt="picture of the item library"> 
-                <div class="circle2">
+                <div class="circle2" onclick="openModal()">
                     <h2>Fun Fact!!!</h2>
                 </div>
             </div>
@@ -351,6 +353,35 @@
             
         </div>
 
+    <!-- Modal -->
+    <div id="circle2Modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>This design helped to win a contract with a European supermarket chain with over 1000 stores. A US 5 million deal.</p>
+        </div>
+    </div>
+    
+    <script>
+    // Function to open modal
+    function openModal() {
+        document.getElementById('circle2Modal').style.display = 'block';
+    }
+    
+    // Function to close modal
+    function closeModal() {
+        document.getElementById('circle2Modal').style.display = 'none';
+    }
+    
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        var modal = document.getElementById('circle2Modal');
+        if (event.target == modal) {
+        modal.style.display = 'none';
+        }
+    }
+    </script>
+        
     </body>
 
     </html>
