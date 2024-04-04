@@ -83,7 +83,6 @@ a:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    height: 100vh;
     position: relative;
 }
 
@@ -173,7 +172,6 @@ padding: 5% 40% 5% 5%;
             position: relative;
             clip-path: none;
             display: block;
-            height: 60vh;
             text-align: center;
             vertical-align: middle;
         } 
@@ -181,18 +179,10 @@ padding: 5% 40% 5% 5%;
         .name-container {
             position: relative;
             text-align: center;
-            left: 2vh;
-            width: auto;
-            right: auto; 
-            margin-top: 5vh;
-            padding-top: 11vh;
-            bottom: 0;
             padding-bottom: 0;
         }
 
-        .name {
-        margin-top: 3vh;
-        padding-top: 7vh;  
+        .name {  
         }
 
         .topleft { 
@@ -202,23 +192,11 @@ padding: 5% 40% 5% 5%;
         }
 
         .design-statement-container {
-            position: relative;
             height: auto;
-            right: 5%; 
-            width: 100%;
-            padding: 3vh 5vh 4vh 2vh;
-            margin-right: 3%;
-
         }
 
         .design-statement {
-            position: inherit; 
-            padding-top: 2vh;
-            right: 7%;
-            padding-bottom: 5vh;
             display: block;
-            overflow: wrap;
-            width: 85%;
             }
 }
 
@@ -337,21 +315,14 @@ vertical-align: middle;
             background-color: #404041;
             color: white;
             position: relative;
-            height: 90vh;   
+            padding-top: 3%;
+            padding-bottom: 10%;  
             }
 
         .project-grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            padding-top: 0;
-            border: 0;
-            margin: 0;
-            column-gap: 0px;
-        }
-
-        .project-section {    
-            height: 120vh;  
+            display: flex;
+            gap: 3%;
+            justify-content: center;
         }
 
         .line1{
@@ -377,21 +348,23 @@ vertical-align: middle;
             line-height: 12vh;
         }
 
+        .project-card1, .project-card2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+       
+
         .grid-image{
-            width: 80vh;
             display: inline-block;
             text-align: center;
             border: 5px solid white;
-            vertical-align: top;   /*this was added to reduced the all gaps betwen the "grid-image" and the "project-name", I had to apply it to both*/
+            vertical-align: top;   /*this was added to reduced the all gaps betwen the 
+            "grid-image" and the "project-name", I had to apply it to both*/
         }
 
-
         .project-name{
-            width: 82vh;
             height: 10vh;
-            margin: 0;
-            padding: 0;
-            border: 0;
             background-color: #4D4D4D;
             display: inline-block;
             font-family: 'Courier New', Courier, monospace;
@@ -403,17 +376,16 @@ vertical-align: middle;
         }
 
         .project-name p {
-        position: absolute;
-        top: 50%;/*this and the left 50% helped me to position in the center*/
-        left: 50%;
-        transform: translate(-50%, -50%); /*this refines the vertical and horizontal position*/
-        margin: 0;
-        white-space: nowrap; /*diary study app is was wrapping in two lines and looked funky, this prevents it.*/
+            justify-content: center;
+            padding-bottom: 2%;
+            margin: 3% 0;
+
         }
 
 
         .project-grid button, .project-grid a {
-           color: white; 
+           color: white;
+           text-decoration: none; 
         }
 
         .project-grid button:hover, .project-grid a:hover {
@@ -424,37 +396,8 @@ vertical-align: middle;
          .project-grid button:active, .project-grid a:active {
             cursor: pointer;
             color: #ee3d57; 
-         } 
+        } 
         
-        /*#LexmarkModal { 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); 
-            margin: 0;
-            white-space: nowrap; 
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 25px;
-            font-weight: 650;
-            text-align: center;
-            vertical-align: top;
-            color: white;
-            text-decoration: none;
-        }
-        */
-
-        .project-card1{
-            text-align: center;
-            margin-bottom: 0;
-            padding-left: 10vh;
-        }
-
-        .project-card2{
-            text-align: center;
-            margin-bottom: 0;
-            padding-right: 10vh;
-        }
-
         .white-space{
             height: 10vh;    
         }
@@ -463,73 +406,27 @@ vertical-align: middle;
 /* Media Query for Mobile Devices portrait*/
 
 @media screen and (max-width: 576px) {
-    .project-grid{
-        grid-template-columns: 1fr;  
-        grid-template-rows: 1fr 1fr; /*Feb. 26 from auto i put especifically 1fr 1fr*/
-        padding-bottom: 10vh;
-      }
-  
-      .project-section {    
-          height: auto;  
-      }
-  
-      h1{
-        font-size: 50px;
-      }
-
-      .grid-image{
-          width: 100%;
-          max-width: 100%;
-      }
-  
-      .project-name{
-          width: 100%;
-          max-width: 100%;
-      }
-  
-      .project-card1, .project-card2{
-          width: 100%;
-          text-align: center;
-          padding: 0;
-      }    
+   
 }
 
 
-/*mobile devices landscape*/
-@media screen and (min-width: 577px) and (max-width: 996px) {
-    .project-grid{
-        grid-template-columns: 1fr;  
-        grid-template-rows: 1fr 1fr; /*Feb. 26 from auto i put especifically 1fr 1fr*/
-        padding-bottom: 10vh;
-      }
-  
-      .project-section {    
-          height: auto;  
-      }
-  
-      h1{
-        font-size: 60px;
-      }
-
-      .grid-image{
-          width: 100%;
-      }
-  
-     .project-name{
-          width: 100%;
-      }
-  
-      .project-card1, .project-card2 {
-          text-align: center;
-          padding-left: 5vh;
-          padding-right: 5vh;
-          width: 100%;
-      }    
+@media screen and (max-width: 996px) {
+    .project-grid {
+        flex-direction: column;
+    }
+    
+    
 }
 
 @media only screen and (min-width: 1281px) { 
-    .project-name{
-        width: 81vh;
+
+    .project-card1,
+    .project-card2{
+        width: 130%;
+    }
+
+    .project-grid{
+        gap: 10%;  
     }
 
     #LexmarkModal{
@@ -539,6 +436,16 @@ vertical-align: middle;
     .project-name p{ 
         font-size: 150%;
     }
+
+    .project--cards1 {
+        padding-right: 5%;
+    }
+
+    .project--cards2 {
+        padding-right: 10%;
+    }
+
+
 
 }
 
