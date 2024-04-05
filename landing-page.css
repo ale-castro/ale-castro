@@ -99,8 +99,8 @@ a:active {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10%;  /*creo que modificando estos dos */
-    margin-left: 45%; /*creo que modificando estos dos */
+    padding: 8% 10% 10% 10%;  /*Toco modificar estos dos para que el contenido */
+    margin-left: 44%; /*apareciera dentro del clip-path */
       
 }
 
@@ -141,7 +141,7 @@ font-size: 26px;
 color: white;
 line-height: 1.1; /* To control spacing */
 align-items: flex-end;
-margin-top: 38%;
+margin-top: 31%;
 padding: 5% 40% 5% 5%;
 
 }
@@ -162,42 +162,28 @@ padding: 5% 40% 5% 5%;
 
         .top-big-container {
             display: block;
-            height: auto;
             padding-top: 0;
         }
 
         .topright {
-            background-color: #404041;
-            color: white;
-            position: relative;
             clip-path: none;
             display: block;
-            text-align: center;
-            vertical-align: middle;
         } 
 
         .name-container {
-            position: relative;
-            text-align: center;
-            padding-bottom: 0;
-        }
-
-        .name {  
+            padding: 10% 0; /*Toco modificar estos dos para que el contenido*/
+            margin-left: 0; /*apareciera dentro del clip-path */
         }
 
         .topleft { 
             clip-path: none;
-            position: relative;
-            
-        }
-
-        .design-statement-container {
-            height: auto;
         }
 
         .design-statement {
-            display: block;
-            }
+            margin: 0;
+            padding: 10%;
+        }
+
 }
 
 /*phones landscape*/
@@ -215,14 +201,14 @@ padding: 5% 40% 5% 5%;
 @media only screen and (min-width: 1281px){
 .name, .lastname { 
     font-size: 200px;
-        }
+    }
         
 .design-statement {
     font-size: 50px;
-    top: 18%
+    margin-top: 38%;
     }
         
-    }
+}
 
 
 /*--------------------- End of styling of section 1-----------------------*/
@@ -353,14 +339,10 @@ vertical-align: middle;
             flex-direction: column;
         }
 
-       
-
         .grid-image{
             display: inline-block;
             text-align: center;
             border: 5px solid white;
-            vertical-align: top;   /*this was added to reduced the all gaps betwen the 
-            "grid-image" and the "project-name", I had to apply it to both*/
         }
 
         .project-name{
@@ -371,15 +353,12 @@ vertical-align: middle;
             font-size: 25px;
             font-weight: 650;
             text-align: center;
-            vertical-align: top; /*this was added to reduced the all gaps betwen the "grid-image" and the "project-name", I had to apply it to both*/
-            position: relative;
         }
 
         .project-name p {
             justify-content: center;
             padding-bottom: 2%;
             margin: 3% 0;
-
         }
 
 
@@ -406,7 +385,11 @@ vertical-align: middle;
 /* Media Query for Mobile Devices portrait*/
 
 @media screen and (max-width: 576px) {
-   
+    h1 {
+        font-size: 60px;   
+    }
+
+
 }
 
 
