@@ -100,8 +100,7 @@ a:active {
     align-items: center;
     text-align: center;
     padding: 8% 10% 10% 10%;  /*Toco modificar estos dos para que el contenido */
-    margin-left: 44%; /*apareciera dentro del clip-path */
-      
+    margin-left: 44%; /*apareciera dentro del clip-path */    
 }
 
 .name-container p {
@@ -143,7 +142,6 @@ line-height: 1.1; /* To control spacing */
 align-items: flex-end;
 margin-top: 31%;
 padding: 5% 40% 5% 5%;
-
 }
     
 .line01 {
@@ -193,8 +191,16 @@ padding: 5% 40% 5% 5%;
 }
 
 /*tablets portrait*/
-@media only screen and (min-width: 769px) and (max-width: 996px) {
+@media only screen and (min-width: 577px) and (max-width: 996px) {
 
+    .name-container {
+        margin-left: 38%; /*apareciera dentro del clip-path */    
+    }
+
+    .design-statement {
+        margin-top: 34%;
+        padding: 6% 40% 5% 5%;
+    }
 }
 
 
