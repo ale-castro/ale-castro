@@ -188,11 +188,20 @@ padding: 5% 40% 5% 5%;
 /*phones landscape*/
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+    
+    .design-statement {
+        font-size: 22px;
+        margin-top: 42%;
+        padding: 8% 40% 2% 5%;
+    }
 
+    .name-container {
+        margin-left: 38%; /*apareciera dentro del clip-path */    
+    }
 }
 
 /*tablets portrait*/
-@media only screen and (min-width: 577px) and (max-width: 996px) {
+@media only screen and (min-width: 769px) and (max-width: 996px) {
 
     .name-container {
         margin-left: 38%; /*apareciera dentro del clip-path */    
@@ -200,8 +209,8 @@ padding: 5% 40% 5% 5%;
 
     .design-statement {
         font-size: 23px;
-        margin-top: 41%;
-        padding: 7% 40% 2% 5%;
+        margin-top: 40%;
+        padding: 7% 41% 3% 5%;
     }
 }
 
@@ -267,7 +276,6 @@ vertical-align: middle;
     }
     
     .picture-profile {
-        width: 60vh;
         padding-bottom: 0;
         margin-bottom: 0;
         padding-right: 1.5vh;    
@@ -320,7 +328,7 @@ vertical-align: middle;
 
         .project-grid{
             display: flex;
-            gap: 3%;
+            column-gap: 3%;
             justify-content: center;
         }
 
@@ -404,6 +412,12 @@ vertical-align: middle;
     }
 }
 
+@media screen and (min-width: 577px) and (max-width: 776px) {
+
+    .project-name{
+        height: 20vh;
+    }    
+}
 
 @media screen and (max-width: 996px) {
     .project-grid {
@@ -421,8 +435,6 @@ vertical-align: middle;
         column-gap: 0;
     }
     
-
-
 }
 
 @media only screen and (min-width: 1281px) { 
@@ -598,6 +610,11 @@ vertical-align: middle;
 
     .linkedin-logo{
         width: 15%;
+    }
+
+
+    .footer-header h1{
+        font-size: 50px; 
     }
 
 }
