@@ -178,8 +178,9 @@ padding: 5% 40% 5% 5%;
         }
 
         .design-statement {
+            font-size: 25px;
             margin: 0;
-            padding: 10%;
+            padding: 9%;
         }
 
 }
@@ -198,8 +199,9 @@ padding: 5% 40% 5% 5%;
     }
 
     .design-statement {
-        margin-top: 40%;
-        padding: 5% 40% 2% 5%;
+        font-size: 23px;
+        margin-top: 41%;
+        padding: 7% 40% 2% 5%;
     }
 }
 
@@ -398,10 +400,8 @@ vertical-align: middle;
 
 @media screen and (max-width: 576px) {
     h1 {
-        font-size: 60px;   
+        font-size: 55px;   
     }
-
-
 }
 
 
@@ -409,7 +409,20 @@ vertical-align: middle;
     .project-grid {
         flex-direction: column;
     }
-       
+    
+    .project-card1, .project-card2, 
+    .project-grid button, .project-grid a{
+     padding: 0;
+     margin: 0;   
+    }
+
+    .project-grid {
+        row-gap: 5%;
+        column-gap: 0;
+    }
+    
+
+
 }
 
 @media only screen and (min-width: 1281px) { 
@@ -556,6 +569,7 @@ vertical-align: middle;
         
 /* Media Query for Mobile Devices portrait */
 @media screen and (max-width: 576px) {
+
     
     .footer-content-grid {
         height: 60vh;
