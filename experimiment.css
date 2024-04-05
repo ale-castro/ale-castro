@@ -198,8 +198,8 @@ padding: 5% 40% 5% 5%;
     }
 
     .design-statement {
-        margin-top: 34%;
-        padding: 6% 40% 5% 5%;
+        margin-top: 40%;
+        padding: 5% 40% 2% 5%;
     }
 }
 
@@ -265,7 +265,7 @@ vertical-align: middle;
     }
     
     .picture-profile {
-        width: 49vh;
+        width: 60vh;
         padding-bottom: 0;
         margin-bottom: 0;
         padding-right: 1.5vh;    
@@ -409,8 +409,7 @@ vertical-align: middle;
     .project-grid {
         flex-direction: column;
     }
-    
-    
+       
 }
 
 @media only screen and (min-width: 1281px) { 
@@ -421,7 +420,8 @@ vertical-align: middle;
     }
 
     .project-grid{
-        gap: 10%;  
+        gap: 13%;
+        padding-right: 10%;  
     }
 
     #LexmarkModal{
@@ -439,8 +439,6 @@ vertical-align: middle;
     .project--cards2 {
         padding-right: 10%;
     }
-
-
 
 }
 
