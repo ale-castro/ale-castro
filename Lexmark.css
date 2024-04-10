@@ -338,19 +338,19 @@ h1,
 
 /*Little side note under persona grid*/
 
+.flex-gray-note {
+    margin-top: 3%;
+    display: flex;
+}
+
 .grey-tiny-box-left {
-    margin-top: 5vh;
     background: #404041;
     width: 5vh;
     height: 18vh;
-    display: inline-block;
-    position: absolute;
 }
 
 .side-note1 {
-    display: inline-block;
     padding-left: 10vh;
-    padding-top: 3vh;
     padding-bottom: 10vh;
 }
 
@@ -440,13 +440,6 @@ h1,
 
 @media only screen and (max-width: 768px){
     
-    .grey-tiny-box-left {
-        margin-top: 40vh;
-    }
-
-    .side-note1 {
-        margin-top: 30vh;
-    }
     .persona-grid {
         margin: 0 0 3% 0;
     }
@@ -455,7 +448,6 @@ h1,
         font-size: 120%;
     }
         
-
 }
 
 @media only screen and (max-width:576px) {

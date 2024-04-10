@@ -268,7 +268,7 @@ h1 {
     }
 
     .prompt-img {
-        width: 100%;
+        width: 210%;
     }
 }    
 
@@ -541,6 +541,10 @@ h1 {
 @media only screen and (max-width: 576px){
     .flex-rules {
         flex-direction: column;
+    }
+
+    .flex-rules img {
+        width: 200%;
     }
 
     .flex-users {
@@ -1005,6 +1009,10 @@ ul{
     .center2 img {
         width: 70%;
     }
+
+    .footer {
+        height: 20vh;
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -1055,6 +1063,7 @@ ul{
 }
 
 @media only screen and (max-width: 996px){
+
     .footer {
         height: 15vh;
     }
