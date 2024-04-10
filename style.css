@@ -729,11 +729,9 @@ vertical-align: middle;
 
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 996px) {
     .modal {
-        left: 10px;
-        width: 800px;
-        height: 800px;
+        left: 5vh;
     }
     
 }
